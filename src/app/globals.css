@@ -1,0 +1,232 @@
+/* Updated: 2025-10-31T14:20:40.369Z */
+/* Updated: 2025-10-31T14:17:42.085Z */
+/* Updated: 2025-10-31T14:16:49.158Z */
+/* Updated: 2025-10-31T14:16:11.213Z */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-elegant: 'Cinzel', serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-calligraphy: 'Great Vibes', cursive;
+  --color-cosmic-navy: #1a1a3e;
+  --color-cosmic-lilac: #c4a7e7;
+  --color-cosmic-pink: #ffc4d6;
+  --color-cosmic-cream: #fef5e7;
+  --color-cosmic-silver: #e6e6fa;
+  --color-cosmic-gold: #ffd700;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #0a0a1a;
+  --foreground: #fef5e7;
+  --card: rgba(26, 26, 62, 0.6);
+  --card-foreground: #fef5e7;
+  --popover: rgba(26, 26, 62, 0.95);
+  --popover-foreground: #fef5e7;
+  --primary: #c4a7e7;
+  --primary-foreground: #1a1a3e;
+  --secondary: #ffc4d6;
+  --secondary-foreground: #1a1a3e;
+  --muted: rgba(196, 167, 231, 0.2);
+  --muted-foreground: #e6e6fa;
+  --accent: #ffd700;
+  --accent-foreground: #1a1a3e;
+  --destructive: #ff6b9d;
+  --border: rgba(196, 167, 231, 0.3);
+  --input: rgba(230, 230, 250, 0.2);
+  --ring: #c4a7e7;
+  --chart-1: #c4a7e7;
+  --chart-2: #ffc4d6;
+  --chart-3: #ffd700;
+  --chart-4: #e6e6fa;
+  --chart-5: #a78bfa;
+  --sidebar: rgba(26, 26, 62, 0.8);
+  --sidebar-foreground: #fef5e7;
+  --sidebar-primary: #c4a7e7;
+  --sidebar-primary-foreground: #1a1a3e;
+  --sidebar-accent: rgba(196, 167, 231, 0.2);
+  --sidebar-accent-foreground: #fef5e7;
+  --sidebar-border: rgba(196, 167, 231, 0.3);
+  --sidebar-ring: #c4a7e7;
+}
+
+.dark {
+  --background: #0a0a1a;
+  --foreground: #fef5e7;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-serif);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-elegant);
+  }
+  
+  .font-script {
+    font-family: var(--font-script);
+  }
+  
+  .font-calligraphy {
+    font-family: var(--font-calligraphy);
+  }
+  
+  .font-elegant {
+    font-family: var(--font-elegant);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    33% {
+      transform: translateY(-20px) translateX(10px);
+    }
+    66% {
+      transform: translateY(-10px) translateX(-10px);
+    }
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+  }
+  
+  @keyframes firefly {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(100px, -100px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(196, 167, 231, 0.3),
+                  0 0 40px rgba(196, 167, 231, 0.2),
+                  0 0 60px rgba(196, 167, 231, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(196, 167, 231, 0.5),
+                  0 0 60px rgba(196, 167, 231, 0.3),
+                  0 0 90px rgba(196, 167, 231, 0.2);
+    }
+  }
+  
+  @keyframes drift {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(10px, -10px) rotate(5deg);
+    }
+    50% {
+      transform: translate(0, -20px) rotate(0deg);
+    }
+    75% {
+      transform: translate(-10px, -10px) rotate(-5deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-twinkle {
+    animation: twinkle 3s ease-in-out infinite;
+  }
+  
+  .animate-firefly {
+    animation: firefly 8s linear infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+  
+  .animate-drift {
+    animation: drift 8s ease-in-out infinite;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
