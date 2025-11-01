@@ -219,7 +219,7 @@ export default function ResearchPage() {
                   <div className="absolute bottom-0 left-0 w-20 h-20 opacity-10">
                     <svg viewBox="0 0 80 80" className="w-full h-full">
                       <circle cx="20" cy="60" r="15" fill="none" stroke="currentColor" strokeWidth="2" className="text-cosmic-lilac" />
-                      <line x1="20" y1="60" x2="35" x2="45" stroke="currentColor" strokeWidth="1.5" className="text-cosmic-lilac" />
+<line x1="20" y1="60" x2="35" y2="45" stroke="currentColor" strokeWidth="1.5" className="text-cosmic-lilac" />
                     </svg>
                   </div>
 

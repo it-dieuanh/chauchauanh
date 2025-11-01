@@ -421,10 +421,10 @@ function componentTagger(src, map) {
                         !shouldTag(semanticName)))
                     return;
                 const { line, column } = node.loc.start;
-                let danhtrId = `${rel}:${line}:${column}`;
+                let danhId = `${rel}:${line}:${column}`;
                 // Enhance the ID with context if we have map information
                 if (mapContext) {
-                    danhtrId += `@${mapContext.arrayName}`;
+                    danhId += `@${mapContext.arrayName}`;
                 }
                 // 🔍 Append referenced variable locations for simple identifier references in props
                 (_a = node.attributes) === null || _a === void 0 ? void 0 : _a.forEach((attr) => {
@@ -435,7 +435,7 @@ function componentTagger(src, map) {
                         const refName = attr.value.expression.name;
                         const varInfo = variables.get(refName);
                         if (varInfo) {
-                            danhtrId += `@${refName}`;
+                            danhId += `@${refName}`;
                         }
                     }
                 });
@@ -443,7 +443,7 @@ function componentTagger(src, map) {
                 if (mapContext === null || mapContext === void 0 ? void 0 : mapContext.indexVarName) {
                     ms.appendLeft(node.name.end, ` data-map-index={${mapContext.indexVarName}}`);
                 }
-                ms.appendLeft(node.name.end, ` data-danhtr-id="${danhtrId}" data-danhtr-name="${semanticName}"`);
+                ms.appendLeft(node.name.end, ` data-danh-id="${danhId}" data-danh-name="${semanticName}"`);
                 mutated = true;
             },
         });

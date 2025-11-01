@@ -3,18 +3,16 @@
 
 import { useEffect, useState, useRef } from "react";
 
-export const CHANNEL = "danhtr_HOVER_v1" as const;
-const VISUAL_EDIT_MODE_KEY = "danhtr_visual_edit_mode" as const;
-const FOCUSED_ELEMENT_KEY = "danhtr_focused_element" as const;
+export const CHANNEL = "danh_HOVER_v1" as const;
+const VISUAL_EDIT_MODE_KEY = "danh_visual_edit_mode" as const;
+const FOCUSED_ELEMENT_KEY = "danh_focused_element" as const;
 
-// Deduplicate helper for high-frequency traffic (HIT / FOCUS_MOVED / SCROLL)
-// -----------------------------------------------------------------------------
-let _danhtrLastMsg = "";
+let _danhLastMsg = "";
 const postMessageDedup = (data: any) => {
   try {
     const key = JSON.stringify(data);
-    if (key === _danhtrLastMsg) return; // identical – drop
-    _danhtrLastMsg = key;
+    if (key === _danhLastMsg) return; // identical – drop
+    _danhLastMsg = key;
   } catch {
     // if stringify fails, fall through
   }
@@ -210,11 +208,11 @@ const extractDirectTextContent = (element: HTMLElement): string => {
   return text;
 };
 
-const parsedanhtrId = (
-  danhtrId: string
+const parsedanhId = (
+  danhId: string
 ): { filePath: string; line: number; column: number } | null => {
   // Format: "filepath:line:column"
-  const parts = danhtrId.split(":");
+  const parts = danhId.split(":");
   if (parts.length < 3) return null;
 
   // The file path might contain colons, so we need to handle that
@@ -484,7 +482,7 @@ export default function HoverReceiver() {
             try {
               const { id } = JSON.parse(focusedData);
               const element = document.querySelector(
-                `[data-danhtr-id="${id}"]`
+                `[data-danh-id="${id}"]`
               ) as HTMLElement;
 
               if (element) {
@@ -553,7 +551,7 @@ export default function HoverReceiver() {
           cursor: default !important;
         }
         /* Ensure protected elements can't be selected */
-        [data-danhtr-protected="true"] {
+        [data-danh-protected="true"] {
           user-select: none !important;
           -webkit-user-select: none !important;
           -moz-user-select: none !important;
@@ -583,7 +581,7 @@ export default function HoverReceiver() {
       const childEl = child as HTMLElement;
       childEl.contentEditable = "false";
       // Add a data attribute to mark protected elements
-      childEl.setAttribute("data-danhtr-protected", "true");
+      childEl.setAttribute("data-danh-protected", "true");
       // Only prevent text selection within the child elements when parent is being edited
       // But still allow pointer events for hovering and clicking
       childEl.style.userSelect = "none";
@@ -595,12 +593,12 @@ export default function HoverReceiver() {
   // Helper to restore child elements after editing
   const restoreChildElements = (element: HTMLElement) => {
     const protectedElements = element.querySelectorAll(
-      '[data-danhtr-protected="true"]'
+      '[data-danh-protected="true"]'
     );
     protectedElements.forEach((child) => {
       const childEl = child as HTMLElement;
       childEl.removeAttribute("contenteditable");
-      childEl.removeAttribute("data-danhtr-protected");
+      childEl.removeAttribute("data-danh-protected");
       // Restore original styles
       childEl.style.userSelect = "";
       childEl.style.webkitUserSelect = "";
@@ -615,9 +613,8 @@ export default function HoverReceiver() {
       return;
     }
 
-    // Get the danhtr ID from the element to ensure we're working with the right one
-    const danhtrId = element.getAttribute("data-danhtr-id");
-    if (!danhtrId) return;
+    const danhId = element.getAttribute("data-danh-id");
+    if (!danhId) return;
 
     // For elements with children, only extract direct text content
     let newText: string;
@@ -636,14 +633,14 @@ export default function HoverReceiver() {
     }
 
     if (newText !== oldText) {
-      const parsed = parsedanhtrId(danhtrId);
+      const parsed = parsedanhId(danhId);
       if (!parsed) return;
 
       // Send text change message to parent
       const msg: ChildToParent = {
         type: CHANNEL,
         msg: "TEXT_CHANGED",
-        id: danhtrId,
+        id: DanhId,
         oldText: wrapMultiline(oldText),
         newText: wrapMultiline(newText),
         filePath: parsed.filePath,
@@ -663,15 +660,15 @@ export default function HoverReceiver() {
     element: HTMLElement,
     styles: Record<string, string>
   ) => {
-    const danhtrId = element.getAttribute("data-danhtr-id");
-    if (!danhtrId) return;
+    const DanhId = element.getAttribute("data-Danh-id");
+    if (!DanhId) return;
 
-    const parsed = parsedanhtrId(danhtrId);
+    const parsed = parseDanhId(DanhId);
     if (!parsed) return;
 
-    // Find ALL elements with the same danhtr ID
+    // Find ALL elements with the same Danh ID
     const allMatchingElements = document.querySelectorAll(
-      `[data-danhtr-id="${danhtrId}"]`
+      `[data-Danh-id="${DanhId}"]`
     ) as NodeListOf<HTMLElement>;
 
     // Apply styles to ALL matching elements for visual feedback
@@ -716,8 +713,8 @@ export default function HoverReceiver() {
     });
 
     // Store the applied styles
-    const existingStyles = appliedStylesRef.current.get(danhtrId) || {};
-    appliedStylesRef.current.set(danhtrId, { ...existingStyles, ...styles });
+    const existingStyles = appliedStylesRef.current.get(DanhId) || {};
+    appliedStylesRef.current.set(DanhId, { ...existingStyles, ...styles });
     hasStyleChangesRef.current = true;
 
     // Update the focus box after style change
@@ -732,13 +729,13 @@ export default function HoverReceiver() {
   const handleStyleBlur = (element: HTMLElement) => {
     if (!hasStyleChangesRef.current) return;
 
-    const danhtrId = element.getAttribute("data-danhtr-id");
-    if (!danhtrId) return;
+    const DanhId = element.getAttribute("data-Danh-id");
+    if (!DanhId) return;
 
-    const parsed = parsedanhtrId(danhtrId);
+    const parsed = parseDanhId(DanhId);
     if (!parsed) return;
 
-    const appliedStyles = appliedStylesRef.current.get(danhtrId);
+    const appliedStyles = appliedStylesRef.current.get(DanhId);
     if (!appliedStyles || Object.keys(appliedStyles).length === 0) return;
 
     // Get className for breakpoint detection
@@ -748,7 +745,7 @@ export default function HoverReceiver() {
     const msg: ChildToParent = {
       type: CHANNEL,
       msg: "STYLE_BLUR",
-      id: danhtrId,
+      id: DanhId,
       styles: appliedStyles,
       className,
       filePath: parsed.filePath,
@@ -768,10 +765,10 @@ export default function HoverReceiver() {
     const imgElement = focusedImageElementRef.current;
     if (!imgElement) return;
 
-    const danhtrId = imgElement.getAttribute("data-danhtr-id");
-    if (!danhtrId) return;
+    const DanhId = imgElement.getAttribute("data-Danh-id");
+    if (!DanhId) return;
 
-    const parsed = parsedanhtrId(danhtrId);
+    const parsed = parseDanhId(DanhId);
     if (!parsed) return;
 
     const newSrc = normalizeImageSrc(imgElement.src);
@@ -782,7 +779,7 @@ export default function HoverReceiver() {
     const msg: ChildToParent = {
       type: CHANNEL,
       msg: "IMAGE_BLUR",
-      id: danhtrId,
+      id: DanhId,
       oldSrc,
       newSrc,
       filePath: parsed.filePath,
@@ -799,12 +796,12 @@ export default function HoverReceiver() {
   // Listen for style and image updates from parent
   useEffect(() => {
     function handleMessage(e: MessageEvent) {
-      if (e.data?.type === "danhtr_STYLE_UPDATE") {
+      if (e.data?.type === "DANH_STYLE_UPDATE") {
         const { elementId, styles } = e.data;
 
-        // Find ALL elements with the same danhtr ID
+        // Find ALL elements with the same Danh ID
         const allMatchingElements = document.querySelectorAll(
-          `[data-danhtr-id="${elementId}"]`
+          `[data-Danh-id="${elementId}"]`
         ) as NodeListOf<HTMLElement>;
 
         if (allMatchingElements.length > 0) {
@@ -890,11 +887,11 @@ export default function HoverReceiver() {
             }
           });
         }
-      } else if (e.data?.type === "danhtr_IMAGE_UPDATE") {
+      } else if (e.data?.type === "DANH_IMAGE_UPDATE") {
         const { elementId, src, oldSrc } = e.data;
         let element: HTMLImageElement | null = null;
         const candidates = document.querySelectorAll(
-          `[data-danhtr-id="${elementId}"]`
+          `[data-Danh-id="${elementId}"]`
         );
         candidates.forEach((el) => {
           if (el.tagName.toLowerCase() === "img") {
@@ -934,7 +931,7 @@ export default function HoverReceiver() {
       } else if (e.data?.type === "RESIZE_ELEMENT") {
         const { elementId, width, height } = e.data;
         const element = document.querySelector(
-          `[data-danhtr-id="${elementId}"]`
+          `[data-Danh-id="${elementId}"]`
         ) as HTMLElement;
 
         if (element && focusedElementRef.current === element) {
@@ -1154,10 +1151,10 @@ export default function HoverReceiver() {
           className: element.getAttribute("class") || "",
         };
 
-        // Extract file info from data-danhtr-id
-        const danhtrId = element.getAttribute("data-danhtr-id");
-        if (danhtrId) {
-          const parsed = parsedanhtrId(danhtrId);
+        // Extract file info from data-Danh-id
+        const DanhId = element.getAttribute("data-Danh-id");
+        if (DanhId) {
+          const parsed = parseDanhId(DanhId);
           if (parsed) {
             msg.filePath = parsed.filePath;
             msg.line = parsed.line;
@@ -1346,7 +1343,7 @@ export default function HoverReceiver() {
       const hit =
         document
           .elementFromPoint(e.clientX, e.clientY)
-          ?.closest<HTMLElement>("[data-danhtr-id]") ?? null;
+          ?.closest<HTMLElement>("[data-Danh-id]") ?? null;
 
       if (hit !== lastHitElementRef.current) {
         lastHitElementRef.current = hit;
@@ -1371,7 +1368,7 @@ export default function HoverReceiver() {
         }
 
         // Don't show hover box if this is the focused element
-        const hitId = hit.getAttribute("data-danhtr-id");
+        const hitId = hit.getAttribute("data-Danh-id");
 
         // Check if we're already showing boxes for this ID
         if (hitId === lastHitIdRef.current) {
@@ -1381,19 +1378,19 @@ export default function HoverReceiver() {
         lastHitIdRef.current = hitId;
 
         const tagName =
-          hit.getAttribute("data-danhtr-name") || hit.tagName.toLowerCase();
+          hit.getAttribute("data-Danh-name") || hit.tagName.toLowerCase();
 
         // Update hover boxes immediately for instant feedback
-        // Find ALL elements with the same danhtr ID
+        // Find ALL elements with the same Danh ID
         const allMatchingElements = document.querySelectorAll(
-          `[data-danhtr-id="${hitId}"]`
+          `[data-Danh-id="${hitId}"]`
         ) as NodeListOf<HTMLElement>;
 
         // Create hover boxes for all matching elements except the focused one
         const boxes: Box[] = [];
         allMatchingElements.forEach((element) => {
           // Skip if this element is the focused one
-          const elementId = element.getAttribute("data-danhtr-id");
+          const elementId = element.getAttribute("data-Danh-id");
           if (elementId === focusedElementId) {
             return;
           }
@@ -1463,7 +1460,7 @@ export default function HoverReceiver() {
       if (!isVisualEditModeRef.current) return;
 
       const hit = (e.target as HTMLElement)?.closest<HTMLElement>(
-        "[data-danhtr-id]"
+        "[data-Danh-id]"
       );
 
       if (hit && isTextEditable(hit)) {
@@ -1503,13 +1500,13 @@ export default function HoverReceiver() {
       lastClickTimeRef.current = now;
 
       const target = e.target as HTMLElement;
-      const hit = target.closest<HTMLElement>("[data-danhtr-id]");
+      const hit = target.closest<HTMLElement>("[data-Danh-id]");
 
       if (hit) {
         const tagName =
-          hit.getAttribute("data-danhtr-name") || hit.tagName.toLowerCase();
+          hit.getAttribute("data-Danh-name") || hit.tagName.toLowerCase();
 
-        const hitId = hit.getAttribute("data-danhtr-id");
+        const hitId = hit.getAttribute("data-Danh-id");
         const isEditable = isTextEditable(hit);
 
         // Always prevent default for non-text interactions
@@ -1544,9 +1541,9 @@ export default function HoverReceiver() {
           );
         }
 
-        // Find ALL other elements with the same danhtr ID and show hover boxes
+        // Find ALL other elements with the same Danh ID and show hover boxes
         const allMatchingElements = document.querySelectorAll(
-          `[data-danhtr-id="${hitId}"]`
+          `[data-Danh-id="${hitId}"]`
         ) as NodeListOf<HTMLElement>;
 
         // Create hover boxes for all matching elements except the focused one
@@ -1736,7 +1733,7 @@ export default function HoverReceiver() {
           }
         }, 0);
       } else {
-        // Clicked on empty space or element without data-danhtr-id
+        // Clicked on empty space or element without data-Danh-id
         // Clear focus and hover boxes
         if (focusedElementRef.current) {
           // Flush any pending changes
@@ -1797,7 +1794,7 @@ export default function HoverReceiver() {
         }
 
         const element = document.querySelector(
-          `[data-danhtr-id="${elementId}"]`
+          `[data-Danh-id="${elementId}"]`
         ) as HTMLElement | null;
         if (!element) return;
 
@@ -1875,9 +1872,9 @@ export default function HoverReceiver() {
 
       // Handle clear inline styles message
       if (e.data.msg === "CLEAR_INLINE_STYLES" && "elementId" in e.data) {
-        // Find ALL elements with the same danhtr ID
+        // Find ALL elements with the same Danh ID
         const allMatchingElements = document.querySelectorAll(
-          `[data-danhtr-id="${e.data.elementId}"]`
+          `[data-Danh-id="${e.data.elementId}"]`
         ) as NodeListOf<HTMLElement>;
 
         allMatchingElements.forEach((element) => {
@@ -1921,9 +1918,9 @@ export default function HoverReceiver() {
           return;
         }
 
-        // Find ALL elements with the same danhtr ID
+        // Find ALL elements with the same Danh ID
         const allMatchingElements = document.querySelectorAll(
-          `[data-danhtr-id="${elementId}"]`
+          `[data-Danh-id="${elementId}"]`
         ) as NodeListOf<HTMLElement>;
 
         if (allMatchingElements.length > 0) {
@@ -1941,7 +1938,7 @@ export default function HoverReceiver() {
 
             if (!tagName) {
               tagName =
-                element.getAttribute("data-danhtr-name") ||
+                element.getAttribute("data-Danh-name") ||
                 element.tagName.toLowerCase();
             }
           });
