@@ -5,7 +5,7 @@ import { Sparkles, Heart, Palette, BookOpen } from "lucide-react";
 
 const personalCards = [
   {
-    title: "Creative Soul",
+    title: "About Myself",
     description: "A passionate artist exploring the magical realms of creativity, from crochet crafts to literary expressions. Every stitch, every word carries a piece of my heart and imagination.",
     icon: Palette,
     imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
