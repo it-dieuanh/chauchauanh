@@ -10,7 +10,7 @@ const personalCards = [
     icon: Palette,
     imageUrl: "/about_myself.jpg",
     position: "top-0 left-0",
-    size: "lg"
+    size: "md"
   },
   {
     title: "My circle of heart",
@@ -20,7 +20,7 @@ const personalCards = [
     position: "top-20 right-0",     
     size: "md"
   },
-  {
+
     title: "Entrepreneur Spirit",
     description: "Founder of a whimsical slime startup, where business meets creativity. Transforming dreams into tangible, colorful realities one slime at a time.",
     icon: Sparkles,
@@ -78,7 +78,7 @@ export default function Home() {
                   animationDelay: `${index * 0.5}s`
                 }}
               >
-                <div className="relative overflow-hidden rounded-3xl border-2 border-cosmic-lilac/30 bg-cosmic-navy/40 backdrop-blur-sm transition-all duration-500 hover:border-cosmic-pink/50 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cosmic-lilac/30">
+                <div className="relative overflow-hidden rounded-3xl border-2 border-cosmic-lilac/30 bg-cosmic-navy/40 transition-all duration-500 hover:border-cosmic-pink/50 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cosmic-lilac/30">
                   {/* Image */}
                   <div className="relative h-64 md:h-80 overflow-hidden">
                     <Image
@@ -87,10 +87,11 @@ export default function Home() {
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-cosmic-navy via-cosmic-navy/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent" />
+
                     
                     {/* Floating Icon */}
-                    <div className="absolute top-4 right-4 p-3 rounded-full bg-cosmic-lilac/20 backdrop-blur-md border border-cosmic-cream/20 animate-twinkle">
+                    <div className="absolute top-4 right-4 p-3 rounded-full bg-cosmic-lilac/20 border border-cosmic-cream/20 animate-twinkle">
                       <Icon className="w-6 h-6 text-cosmic-gold" />
                     </div>
                   </div>
