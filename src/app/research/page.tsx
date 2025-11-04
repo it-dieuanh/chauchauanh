@@ -354,13 +354,6 @@ export default function ResearchPage() {
         <DialogContent className="max-w-4xl max-h-[85vh] overflow-y-auto bg-gradient-to-br from-cosmic-navy/95 to-cosmic-navy/90 backdrop-blur-xl border-2 border-cosmic-lilac/40 text-cosmic-cream">
           {selectedWork !== null && (
             <div className="relative">
-              {/* Close button */}
-              <button
-                onClick={() => setSelectedWork(null)}
-                className="absolute top-4 right-4 p-2 rounded-full bg-cosmic-navy/50 hover:bg-cosmic-lilac/30 border border-cosmic-lilac/30 transition-all duration-300 group"
-              >
-                <X className="w-5 h-5 text-cosmic-silver group-hover:text-cosmic-cream" />
-              </button>
 
               {/* Header with icon */}
               <div className="flex items-start gap-6 mb-8 pb-6 border-b border-cosmic-lilac/30">
