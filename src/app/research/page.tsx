@@ -1,7 +1,8 @@
 "use client";
 
-import { Telescope, FileText, Sparkles, Lightbulb, BookOpen, Microscope, Atom, Brain, Rocket, Award } from "lucide-react";
+import { Telescope, FileText, Sparkles, Lightbulb, BookOpen, Microscope, Atom, Brain, Rocket, Award, X } from "lucide-react";
 import { useState } from "react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const researchWorks = [
   {
@@ -11,7 +12,23 @@ const researchWorks = [
     date: "2024",
     icon: Lightbulb,
     imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
-    color: "cosmic-lilac"
+    color: "cosmic-lilac",
+    fullContent: `# Exploring Creativity in Digital Age
+
+## Abstract
+This research examines the profound impact of digital platforms on creative expression and artistic innovation in contemporary society. Through mixed-methods analysis, we explore how technology has transformed the landscape of creativity.
+
+## Introduction
+The digital revolution has fundamentally altered how we create, share, and experience art...
+
+## Methodology
+Our research employed a combination of qualitative interviews with digital artists and quantitative analysis of social media engagement patterns...
+
+## Findings
+[Your full research content will go here - this is just a placeholder for your actual research paper]
+
+## Conclusion
+Digital platforms have democratized creative expression while simultaneously creating new challenges for artists...`
   },
   {
     title: "The Psychology of Handmade Crafts",
@@ -20,7 +37,13 @@ const researchWorks = [
     date: "2024",
     icon: Brain,
     imageUrl: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    color: "cosmic-pink"
+    color: "cosmic-pink",
+    fullContent: `# The Psychology of Handmade Crafts
+
+## Abstract
+This study investigates the therapeutic benefits and cognitive impacts of engaging in handmade craft activities...
+
+[Your full research content will go here]`
   },
   {
     title: "Entrepreneurship in Creative Industries",
@@ -29,7 +52,13 @@ const researchWorks = [
     date: "2023",
     icon: Rocket,
     imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    color: "cosmic-gold"
+    color: "cosmic-gold",
+    fullContent: `# Entrepreneurship in Creative Industries
+
+## Executive Summary
+This case study explores the challenges and opportunities of building sustainable creative businesses...
+
+[Your full research content will go here]`
   },
   {
     title: "Bilingual Literary Expression",
@@ -38,7 +67,13 @@ const researchWorks = [
     date: "2023",
     icon: BookOpen,
     imageUrl: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
-    color: "cosmic-silver"
+    color: "cosmic-silver",
+    fullContent: `# Bilingual Literary Expression
+
+## Abstract
+This paper examines the nuances and creative possibilities of writing literature in multiple languages...
+
+[Your full research content will go here]`
   },
   {
     title: "Material Science in Slime Production",
@@ -47,7 +82,13 @@ const researchWorks = [
     date: "2024",
     icon: Atom,
     imageUrl: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
-    color: "cosmic-lilac"
+    color: "cosmic-lilac",
+    fullContent: `# Material Science in Slime Production
+
+## Abstract
+A scientific exploration of polymer chemistry and its applications in creating sensory products...
+
+[Your full research content will go here]`
   },
   {
     title: "Textile Arts and Cultural Heritage",
@@ -56,7 +97,13 @@ const researchWorks = [
     date: "2023",
     icon: Microscope,
     imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-    color: "cosmic-pink"
+    color: "cosmic-pink",
+    fullContent: `# Textile Arts and Cultural Heritage
+
+## Introduction
+Exploring the historical significance and contemporary relevance of traditional textile crafts...
+
+[Your full research content will go here]`
   },
   {
     title: "Family Dynamics and Creativity",
@@ -65,7 +112,13 @@ const researchWorks = [
     date: "2024",
     icon: Brain,
     imageUrl: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80",
-    color: "cosmic-gold"
+    color: "cosmic-gold",
+    fullContent: `# Family Dynamics and Creativity
+
+## Abstract
+Understanding how family support systems influence creative development and artistic pursuits...
+
+[Your full research content will go here]`
   },
   {
     title: "Social Media and Artistic Identity",
@@ -74,7 +127,13 @@ const researchWorks = [
     date: "2023",
     icon: Lightbulb,
     imageUrl: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
-    color: "cosmic-silver"
+    color: "cosmic-silver",
+    fullContent: `# Social Media and Artistic Identity
+
+## Introduction
+Investigating how digital platforms shape and reflect artistic identity in the 21st century...
+
+[Your full research content will go here]`
   },
   {
     title: "Innovation in Craft Business Models",
@@ -83,7 +142,13 @@ const researchWorks = [
     date: "2024",
     icon: Rocket,
     imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-    color: "cosmic-lilac"
+    color: "cosmic-lilac",
+    fullContent: `# Innovation in Craft Business Models
+
+## Executive Summary
+Analyzing emerging business models for artisans and makers in the gig economy...
+
+[Your full research content will go here]`
   },
   {
     title: "The Art of Observation",
@@ -92,12 +157,19 @@ const researchWorks = [
     date: "2023",
     icon: Award,
     imageUrl: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=800&q=80",
-    color: "cosmic-pink"
+    color: "cosmic-pink",
+    fullContent: `# The Art of Observation
+
+## A Philosophical Exploration
+A contemplative piece on curiosity, wonder, and the importance of mindful observation in research...
+
+[Your full research content will go here]`
   }
 ];
 
 export default function ResearchPage() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [selectedWork, setSelectedWork] = useState<number | null>(null);
 
   return (
     <main className="min-h-screen pt-24 pb-20 px-6">
@@ -133,6 +205,7 @@ export default function ResearchPage() {
                 className="relative group cursor-pointer"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
+                onClick={() => setSelectedWork(index)}
                 style={{
                   animation: `drift ${6 + index * 0.3}s ease-in-out infinite`,
                   animationDelay: `${index * 0.15}s`
@@ -219,7 +292,7 @@ export default function ResearchPage() {
                   <div className="absolute bottom-0 left-0 w-20 h-20 opacity-10">
                     <svg viewBox="0 0 80 80" className="w-full h-full">
                       <circle cx="20" cy="60" r="15" fill="none" stroke="currentColor" strokeWidth="2" className="text-cosmic-lilac" />
-<line x1="20" y1="60" x2="35" y2="45" stroke="currentColor" strokeWidth="1.5" className="text-cosmic-lilac" />
+                      <line x1="20" y1="60" x2="35" x2="45" stroke="currentColor" strokeWidth="1.5" className="text-cosmic-lilac" />
                     </svg>
                   </div>
 
@@ -275,6 +348,64 @@ export default function ResearchPage() {
           </div>
         </div>
       </div>
+
+      {/* Research Dialog */}
+      <Dialog open={selectedWork !== null} onOpenChange={(open) => !open && setSelectedWork(null)}>
+        <DialogContent className="max-w-4xl max-h-[85vh] overflow-y-auto bg-gradient-to-br from-cosmic-navy/95 to-cosmic-navy/90 backdrop-blur-xl border-2 border-cosmic-lilac/40 text-cosmic-cream">
+          {selectedWork !== null && (
+            <div className="relative">
+              {/* Close button */}
+              <button
+                onClick={() => setSelectedWork(null)}
+                className="absolute top-4 right-4 p-2 rounded-full bg-cosmic-navy/50 hover:bg-cosmic-lilac/30 border border-cosmic-lilac/30 transition-all duration-300 group"
+              >
+                <X className="w-5 h-5 text-cosmic-silver group-hover:text-cosmic-cream" />
+              </button>
+
+              {/* Header with icon */}
+              <div className="flex items-start gap-6 mb-8 pb-6 border-b border-cosmic-lilac/30">
+                <div className="p-4 rounded-2xl bg-cosmic-lilac/20 border border-cosmic-lilac/30">
+                  {(() => {
+                    const Icon = researchWorks[selectedWork].icon;
+                    return <Icon className="w-12 h-12 text-cosmic-lilac" />;
+                  })()}
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="px-3 py-1 rounded-full bg-cosmic-navy/70 border border-cosmic-lilac/30 text-xs font-elegant text-cosmic-cream">
+                      {researchWorks[selectedWork].category}
+                    </span>
+                    <span className="px-3 py-1 rounded-full bg-cosmic-navy/70 border border-cosmic-gold/30 text-xs font-elegant text-cosmic-gold">
+                      {researchWorks[selectedWork].date}
+                    </span>
+                  </div>
+                  <h2 className="font-elegant text-3xl text-cosmic-cream mb-3">
+                    {researchWorks[selectedWork].title}
+                  </h2>
+                  <p className="text-cosmic-silver italic">
+                    {researchWorks[selectedWork].description}
+                  </p>
+                </div>
+              </div>
+
+              {/* Full content area */}
+              <div className="prose prose-invert prose-cosmic max-w-none">
+                <div className="text-cosmic-silver/90 leading-relaxed whitespace-pre-line">
+                  {researchWorks[selectedWork].fullContent}
+                </div>
+              </div>
+
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none">
+                <Telescope className="w-full h-full transform rotate-45" />
+              </div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 opacity-5 pointer-events-none">
+                <FileText className="w-full h-full" />
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </main>
   );
 }
