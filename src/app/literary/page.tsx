@@ -2,6 +2,12 @@
 
 import { BookOpen, Feather, Heart, Star, Moon, Sparkles, Pen } from "lucide-react";
 import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const literaryWorks = [
   {
@@ -63,11 +69,7 @@ const literaryWorks = [
 ];
 
 export default function LiteraryPage() {
-  const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
-
-  const handleFlip = (index: number) => {
-    setFlippedIndex(flippedIndex === index ? null : index);
-  };
+  const [selectedWork, setSelectedWork] = useState<number | null>(null);
 
   return (
     <main className="min-h-screen pt-24 pb-20 px-6">
@@ -94,155 +96,148 @@ export default function LiteraryPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {literaryWorks.map((work, index) => {
             const Icon = work.icon;
-            const isFlipped = flippedIndex === index;
             
             return (
               <div
                 key={index}
-                className="relative perspective-1000"
+                className="relative"
                 style={{
                   animation: `drift ${7 + index * 0.5}s ease-in-out infinite`,
                   animationDelay: `${index * 0.2}s`
                 }}
               >
                 <div
-                  className={`
-                    relative w-full h-[500px] cursor-pointer transition-transform duration-700 transform-style-3d
-                    ${isFlipped ? 'rotate-y-180' : ''}
-                  `}
-                  onClick={() => handleFlip(index)}
-                  style={{
-                    transformStyle: 'preserve-3d',
-                    transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0)'
-                  }}
+                  className="relative w-full h-[500px] cursor-pointer"
+                  onClick={() => setSelectedWork(index)}
                 >
-                  {/* Front of Book */}
-                  <div
-                    className="absolute inset-0 backface-hidden"
-                    style={{ backfaceVisibility: 'hidden' }}
-                  >
-                    <div className="h-full rounded-2xl border-2 border-cosmic-lilac/30 bg-gradient-to-br from-cosmic-navy/80 to-cosmic-navy/60 backdrop-blur-md overflow-hidden group hover:border-cosmic-pink/50 hover:shadow-2xl hover:shadow-cosmic-lilac/40 transition-all duration-500">
-                      {/* Book Cover Design */}
-                      <div className="relative h-full p-8 flex flex-col justify-between">
-                        {/* Decorative book texture */}
-                        <div className="absolute inset-0 opacity-5">
-                          <svg width="100%" height="100%">
-                            <pattern id={`book-texture-${index}`} x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                              <line x1="0" y1="0" x2="40" y2="0" stroke="currentColor" strokeWidth="0.5" />
-                              <line x1="0" y1="20" x2="40" y2="20" stroke="currentColor" strokeWidth="0.5" />
-                            </pattern>
-                            <rect width="100%" height="100%" fill={`url(#book-texture-${index})`} />
-                          </svg>
-                        </div>
+                  <div className="h-full rounded-2xl border-2 border-cosmic-lilac/30 bg-gradient-to-br from-cosmic-navy/80 to-cosmic-navy/60 backdrop-blur-md overflow-hidden group hover:border-cosmic-pink/50 hover:shadow-2xl hover:shadow-cosmic-lilac/40 transition-all duration-500">
+                    {/* Book Cover Design */}
+                    <div className="relative h-full p-8 flex flex-col justify-between">
+                      {/* Decorative book texture */}
+                      <div className="absolute inset-0 opacity-5">
+                        <svg width="100%" height="100%">
+                          <pattern id={`book-texture-${index}`} x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <line x1="0" y1="0" x2="40" y2="0" stroke="currentColor" strokeWidth="0.5" />
+                            <line x1="0" y1="20" x2="40" y2="20" stroke="currentColor" strokeWidth="0.5" />
+                          </pattern>
+                          <rect width="100%" height="100%" fill={`url(#book-texture-${index})`} />
+                        </svg>
+                      </div>
 
-                        {/* Book spine effect */}
-                        <div className="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r from-cosmic-navy to-transparent border-r border-cosmic-lilac/20" />
+                      {/* Book spine effect */}
+                      <div className="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r from-cosmic-navy to-transparent border-r border-cosmic-lilac/20" />
 
-                        {/* Content */}
-                        <div className="relative z-10">
-                          <div className="flex items-center justify-between mb-6">
-                            <div className="px-3 py-1 rounded-full bg-cosmic-lilac/20 border border-cosmic-lilac/30">
-                              <span className="text-xs font-elegant text-cosmic-cream">{work.language}</span>
-                            </div>
-                            <Icon className="w-8 h-8 text-cosmic-gold animate-twinkle" />
+                      {/* Content */}
+                      <div className="relative z-10">
+                        <div className="flex items-center justify-between mb-6">
+                          <div className="px-3 py-1 rounded-full bg-cosmic-lilac/20 border border-cosmic-lilac/30">
+                            <span className="text-xs font-elegant text-cosmic-cream">{work.language}</span>
                           </div>
-                          
-                          <h3 className="font-elegant text-2xl text-cosmic-cream mb-4 group-hover:text-cosmic-pink transition-colors">
-                            {work.title}
-                          </h3>
-                          
-                          <div className="space-y-2 mb-6">
-                            <div className="h-px bg-cosmic-lilac/30 w-full" />
-                            <div className="h-px bg-cosmic-lilac/20 w-5/6" />
-                            <div className="h-px bg-cosmic-lilac/10 w-4/6" />
-                          </div>
-                          
-                          <p className="text-cosmic-silver/90 leading-relaxed italic text-sm line-clamp-6">
-                            {work.preview}
-                          </p>
+                          <Icon className="w-8 h-8 text-cosmic-gold animate-twinkle" />
                         </div>
-
-                        {/* Click to read indicator */}
-                        <div className="relative z-10 text-center">
-                          <div className="inline-flex items-center gap-2 text-cosmic-gold text-sm font-script animate-pulse">
-                            <BookOpen className="w-4 h-4" />
-                            <span>Click to read</span>
-                          </div>
-                        </div>
-
-                        {/* Decorative corners */}
-                        <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-cosmic-gold/20" />
-                        <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-cosmic-pink/20" />
                         
-                        {/* Stars */}
-                        <div className="absolute top-1/4 right-8 w-1 h-1 bg-cosmic-gold rounded-full animate-twinkle" />
-                        <div className="absolute bottom-1/3 left-12 w-1 h-1 bg-cosmic-pink rounded-full animate-twinkle" style={{ animationDelay: '1s' }} />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Back of Book - Full Text */}
-                  <div
-                    className="absolute inset-0 backface-hidden"
-                    style={{ 
-                      backfaceVisibility: 'hidden',
-                      transform: 'rotateY(180deg)'
-                    }}
-                  >
-                    <div className="h-full rounded-2xl border-2 border-cosmic-pink/40 bg-gradient-to-br from-cosmic-navy/90 to-cosmic-navy/70 backdrop-blur-md overflow-hidden shadow-2xl shadow-cosmic-pink/30">
-                      <div className="h-full p-8 overflow-y-auto">
-                        {/* Book page texture */}
-                        <div className="absolute inset-0 opacity-3">
-                          <svg width="100%" height="100%">
-                            <pattern id={`page-texture-${index}`} x="0" y="0" width="100%" height="20" patternUnits="userSpaceOnUse">
-                              <line x1="0" y1="10" x2="100%" y2="10" stroke="currentColor" strokeWidth="0.3" opacity="0.2" />
-                            </pattern>
-                            <rect width="100%" height="100%" fill={`url(#page-texture-${index})`} />
-                          </svg>
+                        <h3 className="font-elegant text-2xl text-cosmic-cream mb-4 group-hover:text-cosmic-pink transition-colors">
+                          {work.title}
+                        </h3>
+                        
+                        <div className="space-y-2 mb-6">
+                          <div className="h-px bg-cosmic-lilac/30 w-full" />
+                          <div className="h-px bg-cosmic-lilac/20 w-5/6" />
+                          <div className="h-px bg-cosmic-lilac/10 w-4/6" />
                         </div>
+                        
+                        <p className="text-cosmic-silver/90 leading-relaxed italic text-sm line-clamp-6">
+                          {work.preview}
+                        </p>
+                      </div>
 
-                        <div className="relative z-10">
-                          <div className="flex items-center justify-between mb-6">
-                            <h4 className="font-elegant text-xl text-cosmic-cream">
-                              {work.title}
-                            </h4>
-                            <button 
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                handleFlip(index);
-                              }}
-                              className="text-cosmic-gold hover:text-cosmic-pink transition-colors"
-                            >
-                              ← Back
-                            </button>
-                          </div>
-                          
-                          <div className="prose prose-invert max-w-none">
-                            <p className="text-cosmic-silver/90 leading-relaxed italic text-sm whitespace-pre-wrap">
-                              {work.fullText}
-                            </p>
-                          </div>
-
-                          {/* Decorative footer */}
-                          <div className="mt-8 pt-6 border-t border-cosmic-lilac/20">
-                            <p className="font-calligraphy text-cosmic-lilac text-center">
-                              ✦ ✦ ✦
-                            </p>
-                          </div>
+                      {/* Click to read indicator */}
+                      <div className="relative z-10 text-center">
+                        <div className="inline-flex items-center gap-2 text-cosmic-gold text-sm font-script animate-pulse">
+                          <BookOpen className="w-4 h-4" />
+                          <span>Click to read</span>
                         </div>
                       </div>
+
+                      {/* Decorative corners */}
+                      <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-cosmic-gold/20" />
+                      <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-cosmic-pink/20" />
+                      
+                      {/* Stars */}
+                      <div className="absolute top-1/4 right-8 w-1 h-1 bg-cosmic-gold rounded-full animate-twinkle" />
+                      <div className="absolute bottom-1/3 left-12 w-1 h-1 bg-cosmic-pink rounded-full animate-twinkle" style={{ animationDelay: '1s' }} />
                     </div>
                   </div>
                 </div>
-
-                {/* Magical glow effect */}
-                {isFlipped && (
-                  <div className="absolute -inset-2 bg-gradient-to-r from-cosmic-pink/20 via-cosmic-lilac/20 to-cosmic-gold/20 rounded-2xl blur-xl -z-10 animate-glow" />
-                )}
               </div>
             );
           })}
         </div>
+
+        {/* Reading Dialog */}
+        <Dialog open={selectedWork !== null} onOpenChange={(open) => !open && setSelectedWork(null)}>
+          <DialogContent className="max-w-4xl max-h-[85vh] overflow-y-auto bg-gradient-to-br from-cosmic-navy/95 to-cosmic-navy/90 backdrop-blur-xl border-2 border-cosmic-lilac/40">
+            {selectedWork !== null && (
+              <>
+                <DialogHeader>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center gap-4">
+                      {(() => {
+                        const Icon = literaryWorks[selectedWork].icon;
+                        return <Icon className="w-8 h-8 text-cosmic-gold animate-twinkle" />;
+                      })()}
+                      <div>
+                        <DialogTitle className="font-elegant text-3xl text-cosmic-cream mb-2">
+                          {literaryWorks[selectedWork].title}
+                        </DialogTitle>
+                        <div className="px-3 py-1 rounded-full bg-cosmic-lilac/20 border border-cosmic-lilac/30 inline-block">
+                          <span className="text-xs font-elegant text-cosmic-cream">
+                            {literaryWorks[selectedWork].language}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </DialogHeader>
+
+                {/* Divider */}
+                <div className="space-y-2 mb-6">
+                  <div className="h-px bg-cosmic-lilac/30 w-full" />
+                  <div className="h-px bg-cosmic-lilac/20 w-5/6" />
+                  <div className="h-px bg-cosmic-lilac/10 w-4/6" />
+                </div>
+
+                {/* Book page texture background */}
+                <div className="absolute inset-0 opacity-3 pointer-events-none">
+                  <svg width="100%" height="100%">
+                    <pattern id="page-texture-dialog" x="0" y="0" width="100%" height="20" patternUnits="userSpaceOnUse">
+                      <line x1="0" y1="10" x2="100%" y2="10" stroke="currentColor" strokeWidth="0.3" opacity="0.2" />
+                    </pattern>
+                    <rect width="100%" height="100%" fill="url(#page-texture-dialog)" />
+                  </svg>
+                </div>
+
+                {/* Content */}
+                <div className="relative prose prose-invert prose-lg max-w-none">
+                  <p className="text-cosmic-silver/90 leading-relaxed italic whitespace-pre-wrap">
+                    {literaryWorks[selectedWork].fullText}
+                  </p>
+                </div>
+
+                {/* Decorative footer */}
+                <div className="mt-8 pt-6 border-t border-cosmic-lilac/20">
+                  <p className="font-calligraphy text-cosmic-lilac text-center text-2xl">
+                    ✦ ✦ ✦
+                  </p>
+                </div>
+
+                {/* Decorative stars */}
+                <div className="absolute top-20 right-12 w-2 h-2 bg-cosmic-gold rounded-full animate-twinkle" />
+                <div className="absolute bottom-32 left-16 w-2 h-2 bg-cosmic-pink rounded-full animate-twinkle" style={{ animationDelay: '1s' }} />
+              </>
+            )}
+          </DialogContent>
+        </Dialog>
 
         {/* Footer Quote */}
         <div className="mt-20 text-center p-10 rounded-3xl bg-cosmic-navy/30 backdrop-blur-sm border border-cosmic-lilac/20 animate-glow">
