@@ -6,18 +6,18 @@ import { Sparkles, Heart, Palette, BookOpen } from "lucide-react";
 const personalCards = [
   {
     title: "About Myself",
-    description: "A passionate artist exploring the magical realms of creativity, from crochet crafts to literary expressions. Every stitch, every word carries a piece of my heart and imagination.",
+    description: "I’m Ngo Chau Anh: a collector of stories, emotions, and tiny sparks of wonder that make life beautiful.",
     icon: Palette,
-    imageUrl: "/about_myself",
+    imageUrl: "/about_myself.jpg",
     position: "top-0 left-0",
     size: "lg"
   },
   {
-    title: "Family Heart",
-    description: "Family is my anchor and inspiration. Through every moment captured, every memory cherished, I find the warmth that fuels my creative journey.",
+    title: "My circle of heart",
+    description: "Family and friends are my anchors and inspirations. Through every shared laughter, every heartfelt moment, I find warmth, grounding, and the quiet strength that shapes who I am.",
     icon: Heart,
-    imageUrl: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80",
-    position: "top-20 right-0",
+    imageUrl: "/familyandfriends.jpg",
+    position: "top-20 right-0",     
     size: "md"
   },
   {
