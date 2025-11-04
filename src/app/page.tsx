@@ -6,39 +6,37 @@ import { Sparkles, Heart, Palette, BookOpen } from "lucide-react";
 const personalCards = [
   {
     title: "About Myself",
-    description:
-      "I’m Ngo Chau Anh: a collector of stories, emotions, and tiny sparks of wonder that make life beautiful.",
+    description: "I’m Ngo Chau Anh: a collector of stories, emotions, and tiny sparks of wonder that make life beautiful.",
     icon: Palette,
     imageUrl: "/about_myself.jpg",
     position: "top-0 left-0",
-    size: "md",
+    size: "md"
   },
   {
     title: "My circle of heart",
-    description:
-      "Family and friends are my anchors and inspirations. Through every shared laughter, every heartfelt moment, I find warmth, grounding, and the quiet strength that shapes who I am.",
+    description: "Family and friends are my anchors and inspirations. Through every shared laughter, every heartfelt moment, I find warmth, grounding, and the quiet strength that shapes who I am.",
     icon: Heart,
     imageUrl: "/familyandfriends.jpg",
-    position: "top-20 right-0",
-    size: "md",
+    position: "top-20 right-0",     
+    size: "md"
   },
   {
-    title: "Entrepreneur Spirit",
+    title: "Heartcrafted Joys",
     description:
-      "Founder of a whimsical slime startup, where business meets creativity. Transforming dreams into tangible, colorful realities one slime at a time.",
+      "I’m happiest when I’m creating: crocheting cozy gifts, baking sweet treats, or crafting handmade surprises for the people I love. My dogs are my daily joy, always curled up beside me as I dream up new ideas. That same spark of creativity led me to co-found a small slime startup with my best friend, turning simple fun into a shared adventure of imagination and teamwork.",
     icon: Sparkles,
     imageUrl:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+      "/hobby.jpg",
     position: "bottom-40 left-10",
     size: "md",
   },
   {
-    title: "Literary Wanderer",
+    title: "Past-tense Heart",
     description:
-      "A writer who dances between English and Vietnamese, crafting romantic prose and spontaneous essays. Words are my constellation, guiding souls through emotional galaxies.",
+      "I carry the past gently - every scent, sound, and childhood moment tucked softly in my heart. I often find myself smiling at who I used to be, the little dreamer who still lives quietly inside me. Nostalgia isn’t sadness to me; it’s a kind of love that never fades.",
     icon: BookOpen,
     imageUrl:
-      "https://images.unsplash.com/photo-1516414447565-b14be0adf13e?w=800&q=80",
+      "/childhood.jpg",
     position: "bottom-0 right-20",
     size: "md",
   },
@@ -54,12 +52,10 @@ export default function Home() {
             Ngo Chau Anh
           </h1>
           <p className="font-script text-2xl md:text-3xl text-cosmic-lilac mb-6">
-            Welcome to My Celestial Gallery
+            Welcome to My Daydream
           </p>
           <p className="text-cosmic-silver/80 max-w-2xl mx-auto italic">
-            Step into a floating museum among the stars, where creativity meets
-            imagination, and every corner tells a story of art, love, and
-            dreams.
+            Wander through a floating gallery of stars, where imagination dances with art, love, and dreams.
           </p>
         </div>
 
@@ -71,32 +67,37 @@ export default function Home() {
 
             return (
               <div
-  key={index}
-  className={`
-    absolute group cursor-pointer hover:z-20
-    m-8 md:m-12 xl:m-16
-    ${isLarge ? "w-full md:w-[40%] xl:w-[38%]" : "w-full md:w-[35%] xl:w-[33%]"}
-    ${index === 0 ? "md:left-[5%] top-0" : ""}
-    ${index === 1 ? "md:right-[5%] top-[480px] md:top-[160px]" : ""}
-    ${index === 2 ? "md:left-[10%] top-[1000px] md:top-[640px]" : ""}
-    ${index === 3 ? "md:right-[8%] top-[1280px] md:top-[840px]" : ""}
-  `}
-  style={{
-    animation: `float ${6 + index}s ease-in-out infinite`,
-    animationDelay: `${index * 0.5}s`,
-  }}
->
-
+                key={index}
+                className={`
+                  absolute group cursor-pointer
+                  ${isLarge ? 'w-full md:w-[45%]' : 'w-full md:w-[40%]'}
+                  ${index === 0 ? 'md:left-[5%] top-0' : ''}
+                  ${index === 1 ? 'md:right-[5%] top-[400px] md:top-[100px]' : ''}
+                  ${index === 2 ? 'md:left-[10%] top-[800px] md:top-[500px]' : ''}
+                  ${index === 3 ? 'md:right-[8%] top-[1200px] md:top-[700px]' : ''}
+                `}
+                style={{
+                  animation: `float ${6 + index}s ease-in-out infinite`,
+                  animationDelay: `${index * 0.5}s`
+                }}
+              >
                 <div className="relative overflow-hidden rounded-3xl border-2 border-cosmic-lilac/30 bg-cosmic-navy/40 transition-all duration-500 hover:border-cosmic-pink/50 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cosmic-lilac/30">
                   {/* Image */}
-<div className="relative w-full aspect-square overflow-hidden bg-black">
-  <Image
-    src={card.imageUrl}
-    alt={card.title}
-    fill
-    className="object-contain transition-transform duration-700"
-  />
-</div>
+                  <div className="relative h-64 md:h-80 overflow-hidden">
+                    <Image
+                      src={card.imageUrl}
+                      alt={card.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent" />
+
+                    
+                    {/* Floating Icon */}
+                    <div className="absolute top-4 right-4 p-3 rounded-full bg-cosmic-lilac/20 border border-cosmic-cream/20 animate-twinkle">
+                      <Icon className="w-6 h-6 text-cosmic-gold" />
+                    </div>
+                  </div>
 
                   {/* Content */}
                   <div className="p-6 md:p-8">
@@ -137,3 +138,4 @@ export default function Home() {
     </main>
   );
 }
+
