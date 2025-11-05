@@ -22,7 +22,7 @@ const crochetItems = [
   {
     title: "First stitches of Love",
     description: "My very first crochet creations - two tiny bears made as a birthday gift for my mom. Every loop was a wish, every knot a little piece of love. What began as a gift became a passion stitched with memories.",
-    imageUrl: "/crochetbear",
+    imageUrl: "/crochetbear.jpg",
     icon: Heart,
     color: "cosmic-gold"
   },
@@ -156,3 +156,4 @@ export default function CrochetPage() {
     </main>
   );
 }
+
