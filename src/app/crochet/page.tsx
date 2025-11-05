@@ -6,37 +6,37 @@ import { useState } from "react";
 
 const crochetItems = [
   {
-    title: "Celestial Amigurumi",
-    description: "Hand-crafted mystical creatures from the fairy realm. Each stitch carries magic, each detail tells a story of moonlit nights and starry dreams.",
-    imageUrl: "https://images.unsplash.com/photo-1600464904743-45c1e7d8f4f6?w=800&q=80",
+    title: "Piggy keychain for Dad",
+    description: "I crocheted this tiny pig for my dad to hang on his work bag - and it’s now his office’s mini celebrity; everyone keeps asking where he got it.",
+    imageUrl: "/pig.jpg",
     icon: Star,
     color: "cosmic-lilac"
   },
   {
-    title: "Enchanted Blankets",
-    description: "Woven with threads of comfort and spells of warmth. Perfect for cozy evenings under the stars, wrapped in handmade love and care.",
-    imageUrl: "https://images.unsplash.com/photo-1601663136919-d053fea4c611?w=800&q=80",
+    title: "Threads of Goodbye",
+    description: "A handmade bouquet I crocheted for my grandmother - woven with love, farewells, and the gentleness she taught me. It rests now beside her urn, a small piece of me that still reaches for her, even in quiet eternity.",
+    imageUrl: "/flower.jpg",
     icon: Sparkles,
     color: "cosmic-pink"
   },
   {
-    title: "Magical Pouches",
-    description: "Tiny treasure holders for secrets and dreams. Crocheted with intricate patterns inspired by ancient fairy tales and mystical gardens.",
-    imageUrl: "https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?w=800&q=80",
+    title: "First stitches of Love",
+    description: "My very first crochet creations - two tiny bears made as a birthday gift for my mom. Every loop was a wish, every knot a little piece of love. What began as a gift became a passion stitched with memories.",
+    imageUrl: "/crochetbear",
     icon: Heart,
     color: "cosmic-gold"
   },
   {
-    title: "Whimsical Garments",
-    description: "Wearable art that transforms the ordinary into extraordinary. Each piece is a statement of creativity and individuality.",
-    imageUrl: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+    title: "Blossoms of Care",
+    description: "A bouquet of red crochet roses I made for my mom on Vietnamese Women’s Day - secretly a tea coaster folded into petals. A small reminder that love, like tea, is best served warm.",
+    imageUrl: "/red flower.jpg",
     icon: Wand2,
     color: "cosmic-silver"
   },
   {
-    title: "Fairy Tale Accessories",
-    description: "From headbands to keychains, each accessory adds a touch of magic to everyday life. Small wonders with big impact.",
-    imageUrl: "https://images.unsplash.com/photo-1558769132-cb1aea1f8db5?w=800&q=80",
+    title: "Patriotic Mushrooms",
+    description: "A basket of crochet mushroom keychains wearing little Vietnamese hats - handmade with a close friend to celebrate our country’s A80 anniversary. Tiny symbols of pride, friendship, and love for home.",
+    imageUrl: "/baby.jpg",
     icon: Scissors,
     color: "cosmic-lilac"
   }
