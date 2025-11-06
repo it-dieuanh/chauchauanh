@@ -59,7 +59,7 @@ Each street adds to the unique blend of aromas that permeate these lanes, making
 I arrived at Hoan Kiem Lake. There was the moss-stained basin, with its disturbingly still surfaces, and around, there were the throngs of tourists that pushed to and fro. I squinted. And I suddenly felt lost. And yet relieved. Being surrounded by so many myths and people. So much of the past and the jostling present. The quiet grace and the ruthless chaos. And I dashed forward, flinging myself in the unforgiving current of mopeds and cars. That is when I unexpectedly escaped that “world” by way of the miraculous door once again, at which time I realized that 36 streets had, without any purpose, not necessary brought me into a “whole new world” but resurrected my “childhood world” in some ways that never sprang to my mind before. 
 
 All of my feelings became ensnared in the inextricable resonance of 36 streets, the scent of crushing nostalgia and the sensation of the enchanting scenery. This excursion has definitely infused into my mind an everlasting sense of tranquility otherwise lacking in my life. And it has, satisfactorily, provided my curious mind with the answer to my original question; however, simultaneously and even unintendedly, provoked a new question to my insatiably inquisitive soul: Is there a sliver of chance that this “world” - 36 streets mingled with their surrounding whorls of scenery - will stand the test of time; or when I had another chance in a lifetime to set my foot on it again, I can no longer treat myself to those transcendental sensations?
-",
+
     icon: Moon,
     color: "cosmic-lilac"
   },
