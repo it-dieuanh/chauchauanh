@@ -14,7 +14,52 @@ const literaryWorks = [
     title: "Whispers of the Moon",
     language: "English",
     preview: "In the quiet hours when stars confess their secrets to the night sky, I find myself penning love letters to the universe...",
-    fullText: "[Your romantic English essay goes here - this is where you can place your full prose piece]",
+    fullText: `36 ALLEYWAYS INTO THE PAST
+
+Have you ever wondered how on earth can we conjure up a sense of what had faded away right within this modern world? Have you ever wondered if there exists a miraculous door bursting right onto the path of a whole new world, one coated with nostalgia and which cuddles the souls seeking the echoes of the past. This chimerical world is a sanctuary of simple intimacy, a refuge from the hurried pace of life, a solace against the restless assaults of the bustling of modernity. 
+
+Hà Nội - The capital of the S-shaped land of thousand years of civilization, which has proved its long-lasting endurance throughout the millennial period of time. The city has graced my barren soul with the fluttering breeze of Spring, a resplendent ray of sunshine when Summer arrives, the gentle atmosphere of Fall and the hardy strength of Winter - the sole season that can bear the acts of God. From the unapologetically chaotic mornings to the calm, peaceful breaths of nighttime, I have always been proud of all facets of life here. Unbeknownst to me, my love for the people and the place has knitted itself into the very fabric of my being. Hà Nội has taken on a new exterior over the years, one of modernity and remarkable change, but beneath that exterior an extraordinary, ancient beauty is preserved, a serene essence that continues to provide consolation for fatigued souls yearning to return to the carefree days of youth and for the torrid spirits of the young seeking an evanescent break from the city's unrelenting pace.
+
+Sometimes I am full of curiosity about a life like my grandparents’—a life they say is exquisitely old, stippled with poetic appeal, and infused with characteristics specific to their time. My peers and I, those young Vietnamese students, have internalized a poem since elementary school that, despite the fact that it is rarely recited word for word, clings to my memory like a relic from the past:
+
+Let’s wander through Long Thành,
+Thirty-six streets, clearly marked, no doubt remains.
+Hàng Bồ, Hàng Bạc, Hàng Gai,
+Hàng Buồm, Hàng Thiếc, Hàng Hài, Hàng Khay.
+Mã Vĩ, Hàng Điếu, Hàng Giầy,
+…
+(Đặng Huy Thu)
+
+I've always thought of the 36 streets as a separate world, one full of secrets and pleasures that wind through each alleyway and reflect the pride of the people who live in the capital. The lively scene of the 36 streets, however, often lacks potency at certain times in the viewpoint of a passing observer who never truly probes into and dissects its spirit to the molecular level. When I walk by the streets, even though my senses are supposed to be stimulated, they stay dulled and restricted to superficial sights as I pass each row of stores without much introspection. This has made my recollections of these streets over the years drab and ephemeral, like a black-and-white painting lacking the colorful strokes that give it life. 
+
+As soft breezes blew past on a chilly autumn day in Hanoi, I was overcome with a desire to lose myself in a world of nostalgia and savor the splendor of every street, store, and culinary treat this city has to offer. Unbelievably, what started off as a quick sightseeing excursion filled me with rapture and anticipation, as though I were embarking on an adventure into a new country, a phantasmal world I had never seen before. I opened the door to that amazing world slowly as I followed the gentle fall air with my camera in hand and followed the aroma of milk flowers at every turn.
+
+I. THE LIGHTS OF THE “WORLD”
+
+Hàng Mã, Mã Vĩ: 
+Hàng Mã is more than just a location where offerings are sold for religious rites or festive events; ever since I was a young child, I have been completely mesmerized every time my parents took me there for the Mid-Autumn Festival. Casting my gaze into the rays of light flickering from those luminous lanterns, I unintendedly fell into the trappings of the beauty of a forest with hundreds of fireflies glowing at night. And this scene, all of a sudden, was reminiscent of my childhood experience with Mid-Autumn Festival, when I was too scared of those strange traditional masks to rid myself from my father’s arms, but too captivated by the lanterns to catch sight of anything other than those “shining orbs”.
+
+II. THE CLOTHES OF THE “WORLD”
+
+Hàng Da, Hàng Đào, Hàng Bông, Hàng Gai, Hàng Hài, Hàng Giầy, and Hàng Ngang
+Every time I enter a street like Hàng Đào that is lined with endless swaths of cloth and clothes, I am surrounded by the merchants' beckoning cries and never-ending grins. This atmosphere, gently blending with the scenery, flung me into a distant recollection of a decade ago, the first time I had ever dressed up with Áo Dài tailored from the soft pink fabric picked and choosed meticulously by the hands of my mother. It was not simply a sheer Tet holiday present that I received from my mother, but that Áo Dài was filled with maternal love inextricably intertwined with the sense of belonging to my “own world”. Not until I set a journey to pay a visit to these streets again and set my childhood eyes on those clothes did it dawn on me that perhaps it was time I bought such a meaningful present to my mother, just like she did to me as a virtue of love. 
+
+III. THE ARTS OF THE “WORLD”
+
+Hàng Bồ, Hàng Buồm, Hàng Mây:
+Handicrafts have long been considered an old craft in Hanoi, according to Hàng Bồ, Hàng Buồm, and Hàng Mây. Every gorgeous handcrafted item fills the booths and gives the streets a remarkable allure that draws every tourist’s attention. Striding along the road, I longed to retrieve my vivid memories about Tò He in my childhood days - a traditional kind of toy for Vietnamese children sculptured from colored rice dough. It dealt a blow to me when there was no left trace of this activity, which more or less hindered my forward steps, though my past experience with it is something everlasting whenever I walk past those streets. But it was a sight for sore eyes when I still could cast my eyes on a variety of handmade traditional items, each was instilled with the unique features of my country and showcased all over the streets. 
+
+IV. THE SCENTS OF THE “WORLD”
+
+Hàng Khay, Hàng Mắm, Hàng Đậu, Hàng Gà, Hàng Bè:
+Each street adds to the unique blend of aromas that permeate these lanes, making the mixture identifiable and unmatched. For many years, the stores that sell chicken, fish sauce, and tofu have flourished and changed, creating a legacy that has been upheld for many generations. The scents of this “world” are ordinary, familiar but irreplaceable by any other delicacies. They all jog my memory of my childhood meals when I stayed with my grandparents house every weekend and was taken to the nearby street-side Phở shop every single morning, from which the fragrant smell made its gentle move in the air and spread every nook and cranny. The look, the smell and the taste of those dishes awakened every corner of my senses and also the glimmering remnants of my past feelings.
+
+……
+
+I arrived at Hoan Kiem Lake. There was the moss-stained basin, with its disturbingly still surfaces, and around, there were the throngs of tourists that pushed to and fro. I squinted. And I suddenly felt lost. And yet relieved. Being surrounded by so many myths and people. So much of the past and the jostling present. The quiet grace and the ruthless chaos. And I dashed forward, flinging myself in the unforgiving current of mopeds and cars. That is when I unexpectedly escaped that “world” by way of the miraculous door once again, at which time I realized that 36 streets had, without any purpose, not necessary brought me into a “whole new world” but resurrected my “childhood world” in some ways that never sprang to my mind before. 
+
+All of my feelings became ensnared in the inextricable resonance of 36 streets, the scent of crushing nostalgia and the sensation of the enchanting scenery. This excursion has definitely infused into my mind an everlasting sense of tranquility otherwise lacking in my life. And it has, satisfactorily, provided my curious mind with the answer to my original question; however, simultaneously and even unintendedly, provoked a new question to my insatiably inquisitive soul: Is there a sliver of chance that this “world” - 36 streets mingled with their surrounding whorls of scenery - will stand the test of time; or when I had another chance in a lifetime to set my foot on it again, I can no longer treat myself to those transcendental sensations?
+`,
     icon: Moon,
     color: "cosmic-lilac"
   },
