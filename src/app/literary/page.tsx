@@ -11,9 +11,10 @@ import {
 
 const literaryWorks = [
   {
-    title: "Whispers of the Moon",
+    title: "Whispers of Hanoi",
     language: "English",
-    preview: "In the quiet hours when stars confess their secrets to the night sky, I find myself penning love letters to the universe...",
+    preview: `In the quiet hours when stars confess their secrets to the night sky, I find myself tracing the heartbeat of Hanoi — thirty-six streets woven with light, longing, and untold love.
+Each alley hums a story, each lantern remembers a name. Step closer, and you might just hear the whispers between moonlight and memory. CLICK IN TO READ`,
     fullText: `36 ALLEYWAYS INTO THE PAST
 
 Have you ever wondered how on earth can we conjure up a sense of what had faded away right within this modern world? Have you ever wondered if there exists a miraculous door bursting right onto the path of a whole new world, one coated with nostalgia and which cuddles the souls seeking the echoes of the past. This chimerical world is a sanctuary of simple intimacy, a refuge from the hurried pace of life, a solace against the restless assaults of the bustling of modernity. 
