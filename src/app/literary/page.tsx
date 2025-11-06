@@ -80,8 +80,8 @@ export default function LiteraryPage() {
             <BookOpen className="w-16 h-16 text-cosmic-lilac animate-twinkle mx-auto" />
             <Feather className="w-6 h-6 text-cosmic-gold absolute -top-2 -right-2 animate-float" />
           </div>
-          <h1 className="font-elegant text-5xl md:text-7xl text-cosmic-cream mb-4">
-            Literary Collection
+          <h1 className="font-elegant text-5xl md:text-6xl text-cosmic-lilac">
+            Literary Works
           </h1>
           <p className="font-script text-2xl text-cosmic-pink mb-4">
             Romantic Prose & Spontaneous Essays
