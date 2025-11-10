@@ -121,125 +121,153 @@ The fallout isn’t just economic - it’s diplomatic. India, one of America’s
 So, what’s the big picture? Tariffs were supposed to make America stronger. Instead, they’ve raised prices for consumers, strained global alliances, and sparked tit-for-tat retaliation from trading partners. Economists say the math hasn’t changed: tariffs almost always reduce overall welfare. They’re a tax by another name—one that businesses and households ultimately pay. Whether Trump’s tariffs survive in court or not, their economic and political legacy is likely to linger for years.`
   },
   {
-    title: "Entrepreneurship in Creative Industries",
-    category: "Case Study",
-    description: "A comprehensive study on building sustainable creative businesses in the modern marketplace.",
-    date: "2023",
+    title: "CREATIVITY VS CONSISTENCY: WHAT DRIVES INVESTOR PSYCHOLOGY ON SHARK TANK VIETNAM?",
+    category: "Journal Article",
+    description: "This article dives into the mindset of investors on Shark Tank Vietnam, exploring what makes sharks write big checks. From daring, creative ideas like dragon fruit noodles to reliable, profitable businesses like brown rice brands, it examines the balance between vision, execution, and authenticity. Investors respond not just to innovative products, but to proven traction, compelling stories, and founders who can deliver.",
+    date: "2024",
     icon: Rocket,
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    imageUrl: "/shark.jpg",
     color: "cosmic-gold",
-    fullContent: `# Entrepreneurship in Creative Industries
+    fullContent: `When you watch Shark Tank Vietnam, it’s easy to get caught up in the theater of it all - the bright lights, the bold pitches, the nervous smiles that can either win millions or leave empty-handed. But behind the drama, there’s something deeper at play: the psychology of investors. What really makes these seasoned sharks open their wallets? Do they fall for daring, creative ideas that promise to change the game, or do they prefer the comforting hum of stable revenue and predictable growth?
 
-## Executive Summary
-This case study explores the challenges and opportunities of building sustainable creative businesses...
+Let’s be honest - creativity is magnetic. When Caty Foods walked in with their dragon fruit noodles, everyone sat up a little straighter. It wasn’t just noodles; it was a story about innovation, about turning an ordinary staple into something extraordinary, with the potential to capture international markets. That kind of idea tugs at the imagination - not just of the audience, but of the sharks too. And it paid off: the company walked away with a million-dollar deal, one of the biggest in the show’s history. It’s proof that bold ideas matter. They make people dream. They make investors wonder: what if this is the next big thing?
 
-[Your full research content will go here]`
+But here’s the thing. Dreams are easy. Numbers? Not so much. No matter how creative a pitch sounds, if the financials are shaky, the enthusiasm fades fast. Investors live in a world where risk is the air they breathe, but too much of it and they choke. That’s why stable revenue - consistent, reliable cash flow - is like oxygen. Take Nada Oils as an example. The founder, Chu Văn Nam, didn’t just bring a product, he also brought a story. A former cattle herder turned entrepreneur, he spoke about hardship, resilience, and ambition in a way that made people lean in. But what sealed the deal wasn’t just his grit, it was the fact that his company had already pulled in nearly 40 billion VND in revenue in 2023 and was profitable. That’s the kind of track record that makes investors think, “This isn’t just a dreamer. This is someone who delivers.” Shark Bình agreed, and wrote an eight-billion-VND check.
+
+And then there’s Bh nông brown rice. Nothing flashy about it. No viral twist. Just a good, solid product and years of steady growth, from 10 billion VND in 2021 to projections of 30 billion in 2023. Reliable, grounded businesses like this often attract investors because they feel safe. It’s not as romantic as dragon fruit noodles, but in a tank full of predators, survival matters. And stable revenue is survival.
+
+Of course, it’s not black and white. If it were, Shark Tank wouldn’t be the phenomenon it is. Investors aren’t robots calculating ROI, they’re humans weighing risk, reward, and sometimes, a good story. Because stories matter. When a founder stands there and talks about how they clawed their way up from nothing, or how their product is tied to their identity, something clicks. Investors are people first, and people respond to authenticity. But authenticity alone won’t cut it. Neither will a cool idea with no execution. You need all three: vision, validation, and values.
+
+That’s why some pitches soar while others sink. We’ve all seen entrepreneurs come in with grandiose plans - trillions of VND in projected revenue, global domination in five years. The sharks don’t even blink. They pass. Not because ambition is bad, but because ambition without a roadmap is just noise. On the other hand, a founder who marries creativity with credible numbers? That’s gold. Investors dream big too, but they dream in spreadsheets.
+
+This balance isn’t just a Shark Tank thing; it’s universal. Talk to any investor, anywhere in the world, and you’ll hear the same mantra: “Ideas are nothing without execution.” In other words, show me the money. Not just in theory, but in your bank account. Because here’s the hard truth: great ideas are cheap. Everyone has them. What’s rare is someone who can take that idea, grind through the ugly, unsexy parts of business, and turn it into something profitable. That’s what sharks are looking for - someone who can dream and deliver.
+
+So, if you’re wondering what really wins on Shark Tank Vietnam, the answer is both simple and complicated. Yes, creativity matters. It makes investors lean forward. It makes the audience cheer. It makes headlines. But revenue - the boring, beautiful evidence of real customers and real traction - is what makes investors lean in with their checkbooks. Add to that a founder who can tell their story with heart, who makes you believe in them as much as their product, and you have the winning formula. It’s not just about the product. It’s about the person. It’s about the promise. And it’s about proof.
+
+That’s the psychology behind the show: a constant tension between imagination and security, between “what if” and “what is.” And maybe that’s why we love watching it so much. Because in those moments, when a dreamer steps onto the stage with nothing but an idea, and walks away with millions, we’re reminded of something we all secretly hope is true: that if you’re brave enough, smart enough, and persistent enough, you can turn creativity into certainty. And if you can do that, the sharks won’t just swim toward you - they’ll fight for the chance to join your journey.`
   },
   {
-    title: "Bilingual Literary Expression",
-    category: "Research Paper",
-    description: "Examining the nuances and creative possibilities of writing literature in multiple languages.",
-    date: "2023",
+    title: "VIETNAM’S TIKTOK SHOP FRENZY: A DOUBLE-EDGED SWORD FOR BUSINESSES AND THE ECONOMY",
+    category: "Journal Article",
+    description: "This article explores the transformative impact of TikTok Shop on Vietnam’s e-commerce landscape, highlighting its role in empowering micro-entrepreneurs and driving digital retail growth. While the platform enables rapid expansion through low barriers to entry and viral trends, it also introduces volatility, thin margins, platform dependency, and consumer finance risks. By examining both microeconomic and macroeconomic effects, the piece outlines how sellers, regulators, and consumers must navigate this social commerce revolution responsibly to harness opportunities while mitigating structural challenges.",
+    date: "2024",
     icon: BookOpen,
-    imageUrl: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+    imageUrl: "/tiktok.jpg",
     color: "cosmic-silver",
-    fullContent: `# Bilingual Literary Expression
+    fullContent: `The past two years have witnessed a dramatic transformation in Vietnam’s e-commerce landscape. At the heart of this disruption is TikTok Shop, an extension of the short-form video platform that has captured the imagination of millions. In a country where 70% of the population are active social media users and over half are under the age of 35, TikTok Shop has not only changed how people consume content but how they shop, creating an entirely new economic dynamic. In 2023 alone, TikTok Shop’s gross merchandise value in Vietnam reached an estimated $1 billion, accounting for nearly 10% of the country’s social commerce market. For many small sellers, this platform represents a golden ticket to quick growth and nationwide reach. But behind the success stories lies a set of structural challenges that could define whether this boom becomes a sustainable economic model or a cautionary tale.
 
-## Abstract
-This paper examines the nuances and creative possibilities of writing literature in multiple languages...
+Social commerce offers more than just convenience. It represents a fundamental shift in transaction behavior, collapsing the traditional e-commerce funnel into a seamless cycle of entertainment and consumption. TikTok Shop has been at the forefront of this evolution, particularly in Vietnam, where its short video algorithm creates a unique blend of discovery and impulse buying. For businesses, this reduces entry barriers dramatically. A seller no longer needs to spend months building a website, optimizing for SEO, or paying high costs for ads on established platforms. Instead, a smartphone and a knack for storytelling are often enough. The marginal cost of entry is almost zero, which explains the surge in micro-entrepreneurs, from students selling handmade jewelry to beauty influencers launching product lines.
 
-[Your full research content will go here]`
+Yet, while these features make TikTok Shop appealing, they also introduce volatility. The economics of attention-driven commerce is inherently unstable. Unlike traditional e-commerce, where purchase intent is high, TikTok thrives on impulse. Demand is highly elastic and deeply tied to trends, what is viral today can be irrelevant tomorrow. For businesses, this means unpredictable revenue streams and fragile brand loyalty. One striking case comes from a Vietnamese skincare brand that reported its customer acquisition cost plummeting from 35,000 VND to just 15,000 VND after leveraging TikTok Shop. Their gross merchandise value surged 220% within three months. But the celebration was short-lived. When a new viral competitor emerged, sales dropped by half almost overnight. The same algorithm that creates opportunity also breeds dependency.
+
+From a microeconomic perspective, TikTok Shop creates a low-barrier marketplace with aggressive price competition. Sellers often engage in a race to the bottom, sacrificing margins to capture fleeting attention. For large brands, this might be sustainable given scale and marketing budgets, but for smaller sellers, it can lead to operational stress. Thin margins combined with pressure to maintain fast shipping and frequent livestreams can erode profitability. Additionally, counterfeit goods have proliferated, undermining consumer trust and damaging legitimate businesses. These negative externalities ripple across the ecosystem, making regulatory oversight increasingly urgent.
+
+On a macroeconomic level, the platform’s rise contributes to retail digitization and GDP growth by expanding the digital economy’s share. It supports entrepreneurship, generates tax revenue, and creates ancillary jobs in logistics, content production, and influencer marketing. However, the structural risks are equally significant. First is platform dependency. When a single foreign-owned platform controls a growing share of online retail, monopsony power becomes a real concern. TikTok can unilaterally adjust commission fees or algorithm priorities, squeezing sellers and reshaping market dynamics overnight. This concentration of power limits bargaining ability for local enterprises and raises questions about digital sovereignty.
+
+Another emerging risk lies in consumer finance. With Buy Now Pay Later (BNPL) options gaining traction on TikTok Shop, credit exposure is increasing among young consumers. While BNPL drives short-term sales, it introduces systemic risk if repayment defaults rise, especially in a market with relatively weak credit infrastructure. For businesses, reliance on such easy-credit-driven demand may create illusory growth, masking fragile fundamentals. Additionally, Vietnam faces the challenge of enforcing intellectual property rights in a fragmented, fast-moving digital market. Without stronger regulation, counterfeit products and grey-market imports will continue to flourish, damaging brand equity and consumer confidence.
+
+Looking forward, the future of TikTok Shop in Vietnam depends on whether stakeholders can strike a balance between innovation and stability. An optimistic scenario sees social commerce maturing into a sustainable growth engine, with fair-trade regulations, transparent algorithms, and financial literacy programs mitigating risks. Sellers diversify across platforms, reducing dependency, while local brands invest in long-term strategies beyond short-term virality. Conversely, a pessimistic outcome would mirror the trajectory of other tech-driven booms: oversaturation, eroded margins, rising defaults on consumer credit, and regulatory crackdowns.
+
+Ultimately, TikTok Shop is neither a guaranteed savior for small businesses nor an inevitable bubble waiting to burst. It is, as one industry analyst noted, “a double-edged sword, creating unprecedented opportunity while concentrating unprecedented risk.” For Vietnam’s business community, the question is no longer whether to engage but how to engage responsibly, building resilience in a marketplace where trends move faster than any business plan can anticipate.`
   },
   {
-    title: "Material Science in Slime Production",
-    category: "Scientific Study",
-    description: "A scientific exploration of polymer chemistry and its applications in creating sensory products.",
+    title: "VIETNAM’S NATIONAL HOLIDAY BOOM: HOW BUSINESS AND TOURISM INTERSECT IN HANOI",
+    category: "Journal Article",
+    description: "This article explores how Vietnam’s National Day transforms Hanoi into a hub of economic activity. Beyond parades and festivities, the holiday drives tourism, boosts revenue for hotels, restaurants, and small businesses, and creates seasonal employment. The surge in demand highlights both opportunities and challenges, from infrastructure strain to operational risks. By examining trends in hospitality, transport, and digital tourism, the piece illustrates how businesses and policymakers can harness National Day as a platform for sustainable growth while balancing cultural celebration with economic strategy.",
     date: "2024",
     icon: Atom,
-    imageUrl: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+    imageUrl: "/vietnam.jpg",
     color: "cosmic-lilac",
-    fullContent: `# Material Science in Slime Production
+    fullContent: `As Vietnam prepares to celebrate its National Day on September 2, Hanoi transforms into more than just a cultural and historical hub. The city becomes a magnet for economic opportunities, drawing in tourists, businesses, and investors who see potential in the convergence of patriotism and commerce. The days surrounding this holiday are more than a time for parades and flags; they represent a period where economic activity surges, tourism flourishes, and businesses adapt to meet extraordinary demand.
 
-## Abstract
-A scientific exploration of polymer chemistry and its applications in creating sensory products...
+The influx of travelers during this season creates a ripple effect throughout multiple sectors of the economy. Hotels, restaurants, and transportation services experience significant spikes in demand. Domestic tourists from other regions of Vietnam flock to the capital to take part in celebrations, while international visitors seize the chance to witness the cultural vibrancy that defines the country. This dual demand provides local businesses with a golden opportunity to maximize profits while enhancing brand visibility. According to the Vietnam National Administration of Tourism, Hanoi typically welcomes hundreds of thousands of visitors during the National Day holiday, pushing occupancy rates to near full capacity.
 
-[Your full research content will go here]`
+Small and medium sized enterprises especially in hospitality and food services often rely on this season to secure a large portion of their annual revenue. For many, these few days function as a critical period that can offset slower business months. Street vendors selling traditional snacks and drinks benefit from increased foot traffic, while high end restaurants offer curated menus to attract celebratory diners. Meanwhile, hotels often introduce promotional packages that combine accommodation with cultural experiences such as guided tours of the Old Quarter or tickets to patriotic concerts. These packages not only boost revenue but also help businesses differentiate themselves in an increasingly competitive market.
+
+Transportation providers also capitalize on the holiday surge. Airlines and railways usually report fully booked schedules days before September 2. Ride hailing services experience similar spikes in demand, often resulting in fare adjustments. This dynamic pricing system, while sometimes controversial, reflects the principles of supply and demand in action. Additionally, the tourism boom fosters employment opportunities, as businesses hire temporary staff to handle increased customer volumes. This seasonal employment provides short term income for thousands, further amplifying the economic impact of the holiday.
+
+Beyond short term revenue gains, the period surrounding National Day represents a strategic opportunity for long term brand building and customer loyalty. Companies that deliver exceptional service during this high pressure season are more likely to retain customers beyond the holiday period. In an age where online reviews and social media recommendations heavily influence consumer choices, positive experiences during peak seasons can generate long lasting reputational benefits. Conversely, service failures are magnified and can damage brand credibility. Thus, businesses must balance the pressure to maximize profits with the imperative to maintain quality standards.
+
+From an investment perspective, this seasonal economic surge highlights the growing potential of Vietnam’s tourism industry as a driver of sustainable growth. International hotel chains and global food brands have increasingly entered the Vietnamese market, recognizing the country’s consistent record of double digit tourism growth prior to the pandemic and its rapid recovery afterward. Hanoi, with its historical charm and modern infrastructure, stands out as a focal point for this investment trend. Infrastructure projects such as the expansion of Noi Bai International Airport and upgrades to major roadways are aimed at accommodating the rising number of visitors during peak periods like National Day.
+
+The integration of technology into the tourism experience adds another layer of opportunity. Digital platforms that facilitate hotel bookings, restaurant reservations, and tour planning see record usage during the holiday season. Businesses that leverage data analytics to anticipate customer preferences and manage supply chains efficiently gain a significant competitive edge. For instance, predictive algorithms can help restaurants estimate demand for specific menu items, reducing waste and improving profitability. Similarly, hotels can use dynamic pricing models to optimize occupancy rates without alienating customers.
+
+However, the economic potential of National Day tourism is not without challenges. Overcrowding in popular areas such as Hoan Kiem Lake and the Old Quarter strains infrastructure and raises concerns about environmental sustainability. Traffic congestion worsens, air quality declines, and public spaces face littering issues. These factors can diminish the overall visitor experience and undermine Hanoi’s reputation as a world class destination. Addressing these concerns requires coordinated efforts between local authorities and private businesses. Initiatives such as traffic rerouting, enhanced public transportation services, and community led clean up campaigns are essential to balancing economic benefits with environmental responsibility.
+
+Moreover, the concentration of economic activity within a short time frame exposes businesses to operational risks. Sudden surges in demand can overwhelm supply chains, leading to stock shortages or inflated prices that frustrate consumers. Effective inventory management and contingency planning are crucial to mitigating these risks. Companies that fail to prepare adequately may find themselves missing out on revenue opportunities or facing reputational damage due to service disruptions.
+
+Another consideration is the evolving behavior of post pandemic travelers. Tourists today prioritize health safety and personalized experiences more than ever before. Businesses that offer contactless payment systems, digital menus, and flexible booking policies are better positioned to attract cautious travelers. Additionally, curated cultural experiences that go beyond conventional sightseeing appeal to visitors seeking authenticity. For example, workshops on traditional crafts, cooking classes featuring Vietnamese cuisine, or guided bicycle tours through lesser known neighborhoods cater to this growing demand for experiential tourism.
+
+Looking ahead, the synergy between economic growth and cultural celebration during National Day presents fertile ground for innovation. Public private partnerships can play a pivotal role in developing sustainable tourism models that distribute visitor traffic more evenly across the city and surrounding regions. Investments in smart city technologies such as real time traffic monitoring and digital tourist assistance can further enhance the visitor experience while reducing strain on infrastructure. Educational campaigns promoting responsible tourism can also foster greater environmental awareness among both visitors and locals.
+
+In conclusion, the days leading up to and following Vietnam’s National Day are far more than a time for patriotic celebration. They represent a powerful intersection of culture and commerce that drives significant economic activity in Hanoi and beyond. For businesses, the challenge lies in seizing short term opportunities without compromising long term sustainability. For policymakers, the task is to create an enabling environment that supports growth while safeguarding cultural and environmental assets. With strategic planning and collaborative efforts, this annual holiday can continue to serve as both a celebration of national identity and a catalyst for economic progress.`
   },
   {
-    title: "Textile Arts and Cultural Heritage",
+    title: "GLOBAL CONFLICTS AND THEIR ECONOMIC SHOCKWAVES: IMPACTS ON MARKETS, TRADE, AND VIETNAM’S ECONOMY",
     category: "Journal Article",
-    description: "Exploring the historical significance and contemporary relevance of traditional textile crafts.",
-    date: "2023",
+    description: "This article examines how ongoing global conflicts—from the war in Ukraine to regional tensions in the Middle East and Southeast Asia—are reshaping markets, trade flows, and national economies. The disruptions affect supply chains, investment sentiment, and geopolitical alliances, with ripple effects on Vietnam’s trade and growth. Amid slowing exports and global uncertainty, Vietnam’s resilient domestic demand and integration into supply chains offer opportunities to navigate these challenges. The piece highlights the need for adaptive strategies to maintain economic stability and capitalize on emerging prospects in a volatile international landscape.",
+    date: "2024",
     icon: Microscope,
-    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    imageUrl: "/war.jpg",
     color: "cosmic-pink",
-    fullContent: `# Textile Arts and Cultural Heritage
+    fullContent: `The global economic landscape in 2025 is deeply influenced by ongoing conflicts across various regions, each leaving distinct imprints on international markets, trade dynamics, and national economies. From the protracted war in Ukraine to the escalating tensions in the Middle East and Southeast Asia, these conflicts have collectively disrupted supply chains, altered investor sentiments, and reshaped geopolitical alliances. Understanding their cumulative impact is crucial for businesses, policymakers, and investors navigating this complex environment.
 
-## Introduction
-Exploring the historical significance and contemporary relevance of traditional textile crafts...
+The war in Ukraine, now in its third year, continues to be a significant disruptor of global economic stability. The conflict has led to substantial losses in human capital, destruction of agricultural infrastructure, and a sharp decline in private consumption. Ukraine's GDP has contracted by over 22% since the onset of the war, with projections indicating minimal growth in the near term. The conflict has also strained European energy markets, with disruptions in Russian oil exports leading to price volatility and increased energy costs across the continent.
 
-[Your full research content will go here]`
+In the Middle East, the ongoing conflicts involving Israel have had profound economic repercussions. The Bank of Israel estimates that the direct costs of military operations from 2023 to 2025 could reach approximately USD 55.6 billion, equivalent to about 10% of the country's GDP. This immense expenditure has weakened Israel's fiscal position, with the budget deficit swelling to 6.8% of GDP and the debt-to-GDP ratio climbing to nearly 70%. Moreover, the broader regional instability has deterred foreign investment and disrupted trade routes, further hampering economic growth.
+
+Southeast Asia has not been immune to the economic fallout from regional conflicts. The border dispute between Cambodia and Thailand has disrupted bilateral trade, which was projected to reach USD 15 billion in 2025. In the first five months of the year, trade volumes between the two nations have significantly declined, with Cambodia's exports to Thailand dropping by over 70%. This disruption has affected industries reliant on cross-border supply chains, including agriculture and manufacturing.
+
+The cumulative effect of these conflicts has been a slowdown in global economic growth. The International Monetary Fund (IMF) has revised its global growth forecast downward, citing heightened geopolitical tensions, rising public debt, and rapid technological changes as key factors contributing to economic uncertainty. The IMF's First Deputy Managing Director, Gita Gopinath, highlights the challenges posed by escalating public debt, projected to reach 100% of global GDP by 2030, and the risks to financial and trade integration.
+
+For Vietnam, the global economic turbulence presents both challenges and opportunities. The country's economy, which grew by 7.52% in the first half of 2025, has shown resilience despite external pressures. However, the outlook remains cautious, with the IMF projecting a moderation in GDP growth to 6.8% in 2025. Factors such as weaker exports, reduced foreign direct investment, and global trade uncertainties are contributing to this slowdown. Nevertheless, Vietnam's structural reforms, resilient domestic demand, and increasing integration into global supply chains position it as a key player in the region's economic landscape.
+
+Vietnam's trade dynamics are also being influenced by the shifting global economic environment. The ongoing conflicts have disrupted traditional trade routes and supply chains, prompting businesses to seek alternative markets and suppliers. This has led to a reevaluation of trade partnerships and a focus on diversifying export destinations to mitigate risks associated with geopolitical instability.
+
+In conclusion, the interconnectedness of global economies means that regional conflicts have far-reaching implications beyond their immediate borders. The economic repercussions of the Ukraine war, Middle Eastern tensions, and Southeast Asian disputes underscore the need for businesses and policymakers to adopt strategies that enhance resilience and adaptability in the face of ongoing uncertainties. For Vietnam, navigating this complex landscape will require a balanced approach that leverages its strengths while addressing emerging challenges.`
   },
   {
-    title: "Family Dynamics and Creativity",
-    category: "Research Paper",
-    description: "Understanding how family support systems influence creative development and artistic pursuits.",
+    title: "THE IMPACT OF TAX REFORMS ON VIETNAM'S FOOD AND BEVERAGE SECTOR: CASH TRANSACTIONS, BUSINESS CHALLENGES, AND TOURISM IMPLICATIONS",
+    category: "Journal Article",
+    description: "Vietnam’s push for stricter tax compliance in the food and beverage sector has inadvertently fueled a rise in cash transactions among small and medium-sized eateries. While these businesses seek to avoid complex digital invoicing and penalties, the trend challenges transparency, impacts tourism, and complicates broader economic regulation. This article explores the government’s tax reforms, the cultural and operational factors driving cash reliance, and the strategies being deployed to encourage cashless payments. Balancing enforcement with accessibility and trust in digital systems is key to creating a more sustainable, transparent, and tourist-friendly F&B economy.",
     date: "2024",
     icon: Brain,
-    imageUrl: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80",
+    imageUrl: "/t.jpg",
     color: "cosmic-gold",
-    fullContent: `# Family Dynamics and Creativity
+    fullContent: `In recent years, Vietnam has witnessed a significant shift in its approach to taxation, particularly concerning the food and beverage (F&B) sector. The government's efforts to enforce stricter tax regulations have led to an increasing number of small and medium-sized restaurants and eateries opting for cash transactions to evade taxes. This practice, while providing short-term relief for business owners, poses long-term challenges for the economy, the tourism industry, and the broader business environment.
 
-## Abstract
-Understanding how family support systems influence creative development and artistic pursuits...
+The Vietnamese government has been implementing a series of tax reforms aimed at enhancing revenue collection and reducing tax evasion. These reforms include measures such as mandatory e-invoicing, stricter enforcement of tax laws, and increased scrutiny of cash transactions. While these initiatives are designed to create a fairer and more transparent tax system, they have inadvertently pushed many small F&B establishments to rely more heavily on cash payments. This shift is primarily driven by the desire to avoid the complexities and potential penalties associated with digital transactions and formal invoicing.
 
-[Your full research content will go here]`
+The Vietnamese government has been implementing a series of tax reforms aimed at enhancing revenue collection and reducing tax evasion. These reforms include measures such as mandatory e-invoicing, stricter enforcement of tax laws, and increased scrutiny of cash transactions. While these initiatives are designed to create a fairer and more transparent tax system, they have inadvertently pushed many small F&B establishments to rely more heavily on cash payments. This shift is primarily driven by the desire to avoid the complexities and potential penalties associated with digital transactions and formal invoicing.
+
+Moreover, the prevalence of cash payments in the F&B sector can have adverse effects on the tourism industry. Tourists, especially international visitors, often prefer cashless transactions for convenience and security reasons. The widespread use of cash in restaurants and eateries may deter potential tourists, impacting the overall attractiveness of Vietnam as a travel destination.
+
+In response to these challenges, the Vietnamese government has been exploring various solutions to encourage cashless transactions and improve tax compliance. These include upgrading payment infrastructure, promoting financial literacy among business owners, and leveraging technology to enhance monitoring and enforcement capabilities. Additionally, there is a push towards simplifying tax procedures to make compliance more accessible for small businesses.
+
+While these efforts are commendable, achieving a significant shift towards cashless transactions in the F&B sector requires a multifaceted approach. It involves not only regulatory measures but also cultural and behavioral changes among business owners and consumers. Building trust in digital payment systems, ensuring data security, and providing incentives for compliance are crucial steps in this process.
+
+In conclusion, the move towards cashless transactions in Vietnam's F&B sector is a complex issue that intertwines economic, social, and cultural factors. While the government's tax reforms aim to create a more equitable and efficient system, the unintended consequence of increased cash transactions highlights the need for a balanced approach that considers the realities of small business operations. By fostering an environment that supports digital payments and simplifies tax compliance, Vietnam can pave the way for a more transparent and sustainable economic future.`
   },
   {
-    title: "Social Media and Artistic Identity",
-    category: "Mini Research",
-    description: "Investigating how digital platforms shape and reflect artistic identity in the 21st century.",
-    date: "2023",
-    icon: Lightbulb,
-    imageUrl: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
-    color: "cosmic-silver",
-    fullContent: `# Social Media and Artistic Identity
-
-## Introduction
-Investigating how digital platforms shape and reflect artistic identity in the 21st century...
-
-[Your full research content will go here]`
-  },
-  {
-    title: "Innovation in Craft Business Models",
+    title: "HIGH SCHOOL ENTREPRENEURSHIP COMPETITIONS IN VIETNAM: NURTURING YOUNG INNOVATORS AND FUTURE BUSINESS LEADERS",
     category: "Journal Article",
-    description: "Analyzing emerging business models for artisans and makers in the gig economy.",
+    description: "Vietnam is witnessing a rise in high school entrepreneurship competitions, from the VinUniversity National High School Entrepreneurship Competition to the Global High School Business Competition. These initiatives empower students to transform ideas into viable business ventures, fostering innovation, critical thinking, and resilience. By providing hands-on experience in problem-solving, financial management, and strategic planning, these competitions cultivate the next generation of entrepreneurs. Beyond skill-building, they contribute to Vietnam’s economic transformation, encouraging a culture of innovation and preparing students to drive sustainable growth in an increasingly interconnected global economy.",
     date: "2024",
-    icon: Rocket,
-    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-    color: "cosmic-lilac",
-    fullContent: `# Innovation in Craft Business Models
+    icon: Lightbulb,
+    imageUrl: "/busi.jpg",
+    color: "cosmic-silver",
+    fullContent: `In recent years, Vietnam has witnessed a surge in entrepreneurship competitions tailored for high school students, reflecting a broader global trend of nurturing young innovators. These competitions serve as platforms for students to transform their ideas into viable business models, fostering a spirit of innovation and resilience among the youth.
 
-## Executive Summary
-Analyzing emerging business models for artisans and makers in the gig economy...
+One notable example is the VinUniversity National High School Entrepreneurship Competition. This initiative aims to inspire and equip students from 10th grade onward with the skills and mindset needed to start their own ventures. By fostering an entrepreneurial spirit, the competition seeks to increase the number of startups in Vietnam and help students develop problem-solving abilities, financial management skills, and resilience in overcoming everyday challenges. Through hands-on experience, participants gain practical business knowledge and contribute to transforming Vietnam's economy from a low-cost manufacturing hub to a center of innovation.
 
-[Your full research content will go here]`
+Similarly, the Vietnam Business Innovation Challenge (VBIC) has emerged as a dynamic platform for high school students aged 14 to 18 to explore the world of business and innovation. This selective business case competition encourages students to apply their theoretical knowledge to real-world scenarios, fostering critical thinking and strategic planning skills. By engaging in such competitions, students not only enhance their business acumen but also develop a deeper understanding of the economic landscape and the challenges faced by entrepreneurs.
+
+The Global High School Business Competition (GHBC) further exemplifies the international dimension of these initiatives. Inviting students from Vietnam and beyond, GHBC provides a platform to sharpen business skills and engage in global cultural exchange. Through this competition, students gain exposure to diverse perspectives and innovative ideas, broadening their horizons and preparing them for the interconnected world of business.
+
+These competitions not only foster entrepreneurial skills but also contribute to the broader economic landscape by encouraging the development of innovative solutions to pressing challenges. By nurturing the entrepreneurial spirit among high school students, Vietnam is laying the groundwork for a future generation of business leaders capable of driving economic growth and social progress.
+
+In conclusion, the rise of entrepreneurship competitions for high school students in Vietnam signifies a commitment to fostering innovation and economic development. By providing platforms for young minds to explore and develop their business ideas, these initiatives contribute to the cultivation of a vibrant entrepreneurial ecosystem that can address the evolving needs of the economy.`
   },
-  {
-    title: "The Art of Observation",
-    category: "Philosophical Essay",
-    description: "A contemplative piece on curiosity, wonder, and the importance of mindful observation in research.",
-    date: "2023",
-    icon: Award,
-    imageUrl: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=800&q=80",
-    color: "cosmic-pink",
-    fullContent: `# The Art of Observation
-
-## A Philosophical Exploration
-A contemplative piece on curiosity, wonder, and the importance of mindful observation in research...
-
-[Your full research content will go here]`
-  }
 ];
 
 export default function ResearchPage() {
