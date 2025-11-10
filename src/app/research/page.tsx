@@ -291,7 +291,7 @@ export default function ResearchPage() {
             Curiosity-Driven Explorations
           </p>
           <p className="text-cosmic-silver/80 max-w-2xl mx-auto italic">
-            Through the lens of curiosity, I explore intersections of art, science, and humanity. 
+            Through the lens of curiosity, I explore intersections of society and humanity. 
             Each piece represents a journey of discovery and intellectual wonder.
           </p>
         </div>
