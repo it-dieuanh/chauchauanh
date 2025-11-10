@@ -116,26 +116,73 @@ Because, after all — “If you treat a dog like a human, it will treat you lik
     color: "cosmic-pink"
   },
   {
-    title: "Celestial Musings",
+    title: "Whispers of Empathy",
     language: "English",
     preview: "Between the spaces of heartbeats and dreams, there exists a realm where words dance like fireflies in summer dusk...",
-    fullText: "[Your contemplative English piece]",
-    icon: Sparkles,
+    fullText: `Between the hush of mountains and the murmur of the wind, I found stories that still trembled beneath the surface of time. During our charity trip with The Embers of War, I met victims of Agent Orange — people whose scars told more than history books ever could. As the head organizer, I wasn’t just leading a project; I was learning to feel, to listen, to carry the weight of another’s pain with gentleness. That journey rewrote my understanding of empathy and hope, turning every moment into quiet poetry. Click to read the full reflection.`,
+    icon: Sparkles, 
     color: "cosmic-gold"
   },
   {
-    title: "Hồi Ức Mùa Hoa",
-    language: "Tiếng Việt",
-    preview: "Mùa xuân về mang theo những cánh hoa rơi, như những lời thoại thầm trong gió...",
-    fullText: "[Vietnamese literary work]",
+    title: "Letters to the Unspoken",
+    language: "English",
+    preview: `There are stories we never dare to tell — not because they are shameful, but because they live too close to the heart. This diary is one of them. Written in the stillness of a late night, it carries the echoes of my eleven-year-old self — the girl who first learned that love can be uneven, that justice does not always begin at home, and that silence can be the heaviest inheritance of all.
+Between love and disappointment, discipline and tenderness, I began to question what it truly means to belong in a family built on rules, pride, and gendered expectations. These pages are my quiet rebellion — a letter to the unspoken corners of my past, and perhaps, a way to make peace with them.
+(Click to read the full diary entry.)`,
+    fullText: `What does it mean to be “artificial”? What does “artificial” mean in your own definition? Have you ever asked yourself what it would feel like if you were labeled as an “artificial person”? It may sound academic and far-fetched, but that’s exactly how I used to see my own little brother when I was still a naïve child with a fragile soul and a tender heart.
+So... why?
+Dear my diary,
+When talking about my family, I usually smile and hold my head high in front of others. I’m quite sure that, at first glance, most people would dream of having a family like mine - a happy household, warm and complete, with all its members, a model family with strong values and discipline, where two generations have served as police officers. But as I grew older, I gradually realized that behind that shining facade were hidden corners I would never dare to share with anyone - except for you, my dear diary. I will entrust you with the deepest, most unspoken thoughts of my life, so please keep them safe and sound for me. Slowly, I began to notice the darker sides within the home I had always dreamed of recreating in my own future family - those “grown-up matters” that my parents thought I was too young to understand. But little did they know, I had already stepped into that big, secret world when I was just an 11-year-old girl.
+I hate the number eleven.
+Not because it marked the start of middle school, or because it was when puberty began. No - it was because that number left a deep psychological scar in me, it gave me a clearer sense of the world around me, and sparked the first restless thoughts of growing up. 
+It all began at a party. I was sitting next to my paternal grandmother, listening to her chat with other guests at the table. It would have been just a normal conversation—except for the moment she said, right in front of me, that when she found out my mother was pregnant with a girl—my older younger sister—my grandfather was terribly sad and disappointed. That moment… in the mind of a child—who my grandmother probably thought was still too immature—was when seeds of confusion, sadness, and endless questions were sown. Seeds I would carry and search answers for, all alone, for years to come. At that time, my sister was already three years old.
+"Did she do something wrong just by being born?"
+"Why would someone feel disappointed about a child already brought into this world? Why?"
+I felt confused, uncomfortable, but I didn’t say a word to anyone. I just sat quietly, looking at my sister with deep sympathy... because I, too, am a girl.
+Also in that dreadful eleventh year of mine, my mother announced she was pregnant again—the youngest member of our family, and this time, it was a boy. Like the innocent child I was, I was overjoyed. I loved babies, I loved warm family gatherings, I loved being surrounded by loved ones—that’s just who I am. But once again, my spirit was shaken. I was thrown into a spiral of confusion and pain when I overheard my mom talking to a friend in the car—something about how she had the baby, and how much it cost. I repeat: how much money it cost. He was made? I was old enough to understand how babies were normally made—but why was there a price? What did she mean? It was IVF—a method that helps couples struggling to have children, not something meant to pick a baby's gender. At eleven, I was too young to understand what IVF was, but I did know that my parents had done something magical—or rather, artificial—to have a baby, and maybe, to ensure that it would be a boy. And that cost a lot of money.
+My world began to shake. Then, it quietly shattered. I’m not exaggerating.
+And once again, those thoughts came back to me:
+"A daughter" vs "a son"—why was my sister not accepted, even though she was a gift from nature, from fate?
+Why was my brother the one they were willing to spend a fortune to “find”?
+I didn’t know. I only knew that I felt lost in the tangled world of grown-ups. A little angry, and deeply disappointed.
+You know what, dear diary?
+My mom had to endure hundreds of hormone injections during her pregnancy. She lost her chance at a promotion simply because she had three children—which violated state policies for a police officer. I loved my mother for everything she endured. But at the same time, I was angry at her for letting herself endure all of it. As a teenager, I blamed it all on my paternal side of the family. I started to distance myself from my father and grandparents. At times, I even hated my little brother. Once, I yelled at him and called him “artificial,” when our parents weren’t around. He was treated like a priceless treasure, like royalty, every time our relatives came to visit. They called him, in the traditional way, “cháu đích tôn”—the eldest grandson in the direct male line. I didn’t envy him. I wasn’t angry that he was loved. I just wanted to know why—what made the difference?
+As I got older, reaching adolescence, I became even more aware of what had been happening. I started reading about gender equality. But more than that, I wanted to see it. I wanted to witness it within my own family. One time, my grandfather bluntly said during dinner: “I don’t like having daughters.” Everyone fell silent. I stood up, holding my bowl of rice, and walked away from the table. As I walked, I whispered to myself: This is exactly what gender discrimination looks like. I’m the type of person who wears emotions on my sleeve—happy, sad, angry, you’ll see it all. But for me to stand up and say something like that out loud—it must have been rooted deep inside me, for years. Yes. Since I was eleven.
+Sometimes, when I think back, I still wonder why it all happened, and whether it was “reasonable” in any way. My grandfather is the eldest son of a long-standing Vietnamese family. My father’s side has a tradition of working in law enforcement. Of course, the desire to have a male heir must have been deeply embedded in his values—values passed down for generations. Once, a family acquaintance saw me and my siblings and said: “Right. There has to be a grandson to carry on the family name. It’s not about gender discrimination, really—it’s just that boys are the ones who take care of their parents, who handle worship and rituals.”
+That moment stirred a storm of conflicting thoughts in me.
+Can’t girls do those things too? Why are boys always expected to take on those responsibilities? Maybe… maybe it’s just “tradition.” Passed down from ancient, feudal times. I don’t know anymore. Or maybe I just don’t want to think about it.
+And right now, as I sit here writing these words. All I truly want is gender equality. Balance between “male” and “female”. Freedom from old-fashioned beliefs that weigh down women. My family - built on a legacy of law, justice, and order - Now feels like a place where injustice quietly lives.
+So who will answer for me… who is justice really for?
+`,
     icon: Heart,
     color: "cosmic-silver"
   },
   {
-    title: "Letters to Tomorrow",
-    language: "English",
-    preview: "Dear future self, if you're reading this, know that every moment we lived was painted with colors of hope...",
-    fullText: "[Your English letter/essay]",
+    title: "First strokes of a dream",
+    language: "Bilingual",
+    preview: `This is my very first prose, a tender and romantic reflection, shared on our project’s Facebook page, where it was warmly praised and welcomed.`,
+    fullText: `ĐIỂM SẮC
+
+“Áng văn trôi trên bức họa đen trắng
+Chờ người đến điểm sắc thắm cho thơ.”
+
+Khi người nghệ sĩ thả hồn mình vào từng con chữ để viết nên những trang sách ấp ôm biết bao tâm tư, tình cảm, đó cũng là lúc một bức họa đen trắng được phác họa nên với nét vẽ mềm mại, dịu dàng. Từng nét hoạ ấy đều đã lay động lòng người, để rồi thôi thúc những tri âm tri kỷ của người nghệ sĩ tới thưởng thức và nối dài sức sống cho chính bức tranh bằng hàng vạn gam màu. 
+
+Đong đưa theo khúc nhạc du dương cất lên từ trang sách chất chứa bao tình cảm thầm kín, người thưởng văn không chỉ “điểm sắc” cho những trang sách ấy mà còn “điểm sắc” cho chính cuộc đời mình - bức tranh đẹp nhất vốn luôn bị vùi chôn dưới nhịp sống xô bồ ngoài kia. Những người thưởng thức tác phẩm đã vô tình đánh thức dòng chảy của sức sống mãnh liệt trong tâm hồn ngỡ như đã héo tàn tự bao giờ.
+
+Cuộc sống thiếu đi dư âm của sách cũng giống như một bức họa đơn sắc tẻ nhạt, khao khát được khoác lên mình tấm áo mới rực rỡ. Phải chăng cuộc đời sẽ là bức tranh vạn sắc nếu ta cứ để cho từng câu chữ chiếm lấy trái tim mình, lay động những xúc cảm trong trẻo vốn chực chờ được khơi dậy bấy lâu nay?
+
+VIVID STROKES OF THE SOUL
+
+"Words drift across a black-and-white canvas,
+Waiting for someone to paint them with vibrant hues."
+
+When an artist pours their soul into each word, crafting pages that cradle countless thoughts and emotions, it is as if a black-and-white painting is simultaneously sketched with soft, delicate strokes. Every line moves the heart, prompting kindred spirits to come, experience it, and extend the life of the painting with a thousand colors.
+
+Swaying to the gentle music rising from these pages filled with hidden emotions, the reader does not merely “add color” to the words—they also “add color” to their own life, awakening the most beautiful canvas of existence that has long been buried beneath the chaotic rhythm of everyday life. Those who immerse themselves in the work inadvertently rekindle a torrent of vitality in their souls, a vitality that seemed long withered.
+
+Life without the echoes of books is like a monotonous, colorless painting, yearning to don a brilliant new coat. Perhaps life itself could become a masterpiece of countless colors if we let every word touch our hearts, stirring the pure emotions that have long awaited to be awakened.
+,
     icon: Feather,
     color: "cosmic-lilac"
   },
