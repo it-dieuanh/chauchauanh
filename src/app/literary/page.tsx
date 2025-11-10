@@ -181,8 +181,7 @@ When an artist pours their soul into each word, crafting pages that cradle count
 
 Swaying to the gentle music rising from these pages filled with hidden emotions, the reader does not merely “add color” to the words—they also “add color” to their own life, awakening the most beautiful canvas of existence that has long been buried beneath the chaotic rhythm of everyday life. Those who immerse themselves in the work inadvertently rekindle a torrent of vitality in their souls, a vitality that seemed long withered.
 
-Life without the echoes of books is like a monotonous, colorless painting, yearning to don a brilliant new coat. Perhaps life itself could become a masterpiece of countless colors if we let every word touch our hearts, stirring the pure emotions that have long awaited to be awakened.
-,
+Life without the echoes of books is like a monotonous, colorless painting, yearning to don a brilliant new coat. Perhaps life itself could become a masterpiece of countless colors if we let every word touch our hearts, stirring the pure emotions that have long awaited to be awakened.`,
     icon: Feather,
     color: "cosmic-lilac"
   },
