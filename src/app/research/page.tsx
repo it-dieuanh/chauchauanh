@@ -11,7 +11,7 @@ const researchWorks = [
     description: "An analytical exploration of carbon taxes from an economic perspective, examining their effects on emissions, government revenue, and industry behavior. This essay also evaluates criticisms, potential drawbacks, and alternative mechanisms such as carbon border adjustments, emissions trading, and voluntary carbon markets to address climate and economic challenges effectively.",
     date: "2024",
     icon: Lightbulb,
-    imageUrl: "/Carbon-tax.jpg",
+    imageUrl: "/Carbon-tax.webp",
     color: "cosmic-lilac",
     fullContent: `CARBON TAX THROUGH THE ECONOMIC LENS
 
@@ -105,7 +105,7 @@ Omolere, M. P. (2024, January 2). Carbon Tax: definition, pros and cons, and imp
     description: "An analysis of Trump-era tariffs and their lasting economic impact on U.S. businesses, households, and global trade relations. This article explores how tariffs act like hidden taxes, affecting GDP, wages, and supply chains, while also reshaping diplomatic ties and the U.S.’s position in international markets.",
     date: "2024",
     icon: Brain,
-    imageUrl: "/ustar.jpg",
+    imageUrl: "/ustar.webp",
     color: "cosmic-pink",
     fullContent: `When Donald Trump first slapped tariffs on foreign goods, the move was sold as a bold play to “bring jobs back” and protect American industries. Years later, the economic aftershocks are still shaking businesses, households, and even the country’s global standing. Just this week, a U.S. appeals court declared that many of those tariffs were illegal, saying the president didn’t have the authority to impose such broad duties without Congress. For now, the ruling is on hold until mid-October, giving Trump’s legal team time to fight back, likely all the way to the Supreme Court. If these tariffs fall, it could trigger a messy reset in trade policy.
     
