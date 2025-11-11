@@ -16,7 +16,7 @@ const slimeProducts = [
   {
     title: "Chau Anh with slime",
     description: "We also took charge of the brand’s visual marketing, photographing our products and creating promotional content ourselves. I often used my own image to represent the brand, bringing each jar of slime closer to our audience. I genuinely enjoyed investing time and effort into making every photo and promotional piece look polished and full of personality.",
-    imageUrl: "/tui.jpg",
+    imageUrl: "/tui.JPG",
     icon: Star,
     type: "product",
     color: "cosmic-lilac"
