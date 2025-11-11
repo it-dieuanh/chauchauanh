@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const slimeProducts = [
   {
-    title: "CEO & Founder",
+    title: "/0.jpg",
     description: "Meet the visionary behind the magic! Passionate about creating unique slime experiences that bring joy and wonder to everyone.",
     imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
     icon: Crown,
