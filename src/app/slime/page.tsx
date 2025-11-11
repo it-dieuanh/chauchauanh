@@ -14,14 +14,6 @@ const slimeProducts = [
     color: "cosmic-gold"
   },
   {
-    title: "Chau Anh with slime",
-    description: "We also took charge of the brand’s visual marketing, photographing our products and creating promotional content ourselves. I often used my own image to represent the brand, bringing each jar of slime closer to our audience. I genuinely enjoyed investing time and effort into making every photo and promotional piece look polished and full of personality.",
-    imageUrl: "/tui.JPG",
-    icon: Star,
-    type: "product",
-    color: "cosmic-lilac"
-  },
-  {
     title: "CEO Introduction",
     description: "Having loved playing with slime since childhood and being deeply passionate about entrepreneurship, I’ve always dreamed of seeing our slime shop grow stronger and more successful - a small brand that brings joy, creativity, and color to everyone who discovers it.",
     imageUrl: "/chanhintro.jpg",
